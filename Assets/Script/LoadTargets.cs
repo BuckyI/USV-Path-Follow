@@ -5,15 +5,15 @@ using System;
 using System.Text.RegularExpressions;
 public class LoadTargets : MonoBehaviour
 {
+    public TextAsset targetsT;
     private List<float[]> targets = new List<float[]>();
     // Start is called before the first frame update
     void Start()
     {
         // load target location from targets.csv
-        TextAsset target_ass = Resources.Load<TextAsset>("PathData/target");
-        foreach (string t in target_ass.text.Split('\n'))
+        // TextAsset targetsT = Resources.Load<TextAsset>("PathData/target");
+        foreach (string t in targetsT.text.Split('\n'))
         {
-
             Match m = Regex.Match(t, @"([\d\.]+),\s?([\d\.]+)");
             if (m.Success)
             {
@@ -32,7 +32,6 @@ public class LoadTargets : MonoBehaviour
             go.transform.position = new Vector3(item[0], 0, item[1]);
             go.transform.SetParent(GetComponent<Transform>());
         }
-
     }
 
     // Update is called once per frame

@@ -5,6 +5,7 @@ using System;
 using System.Text.RegularExpressions;
 public class LoadMovement : MonoBehaviour
 {
+    public TextAsset pathT;
     // 每组数据之间相距 0.1 s
     static public List<float[]> path = new List<float[]>();
 
@@ -12,10 +13,9 @@ public class LoadMovement : MonoBehaviour
     void Start()
     {
         // load way points from path.csv
-        TextAsset target_ass = Resources.Load<TextAsset>("PathData/final_path");
-        foreach (string t in target_ass.text.Split('\n'))
+        // TextAsset pathT = Resources.Load<TextAsset>("PathData/final_path");
+        foreach (string t in pathT.text.Split('\n'))
         {
-
             Match m = Regex.Match(t, @"([\d\.]+),\s?([\d\.]+),\s?(-?[\d\.]+)");
             if (m.Success)
             {
@@ -25,11 +25,11 @@ public class LoadMovement : MonoBehaviour
                 path.Add(new float[] { x, y, psi }); // store
             }
         }
-        Debug.Log(path.Count + "waypoints loaded.");
+        Debug.Log(path.Count + " waypoints loaded.");
 
         // 初始化位置
         float[] init = path[0];
-        GameObject.Find("USV").GetComponent<Transform>().position = new Vector3(init[0], 0, init[1]);
+        GetComponent<Transform>().position = new Vector3(init[0], 0, init[1]);
     }
 
     // Update is called once per frame
