@@ -10,11 +10,11 @@ public class LoadTargets : MonoBehaviour
     void Start()
     {
         // load target location from targets.csv
-        TextAsset target_ass = Resources.Load<TextAsset>("PathData/targets");
+        TextAsset target_ass = Resources.Load<TextAsset>("PathData/target");
         foreach (string t in target_ass.text.Split('\n'))
         {
 
-            Match m = Regex.Match(t, @"(\d+),\s?(\d+)");
+            Match m = Regex.Match(t, @"([\d\.]+),\s?([\d\.]+)");
             if (m.Success)
             {
                 float x = (float)Convert.ToDouble(m.Groups[1].Value);

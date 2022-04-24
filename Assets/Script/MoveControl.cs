@@ -9,14 +9,26 @@ public class MoveControl : MonoBehaviour
     public float sensitivetyKeyBoard = 0.1f;
     public float sensitivetyMouseWheel = 10f;
 
+    public Vector3 offset;
+    public Transform ship;
+
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Follow();
+    }
+    void Follow()
+    {
+        // x, z 跟随 usv
+        transform.position = offset + ship.position - new Vector3(0, ship.position[1], 0);
+        // transform.position = offset + ship.position;
+    }
+    void ManualAdjust()
     {
         if (Input.GetAxis("Mouse ScrollWheel") != 0)
         {

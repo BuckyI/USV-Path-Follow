@@ -6,16 +6,18 @@ using System;
 public class ShipMove : MonoBehaviour
 {
     private Vector3 speed = new Vector3(1, 0, 1);
-    private int count = 0; // index of waypoints
+    private float total_time = 0;
+    public float accelerate = 1; // 用于加速动画
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(0, 0, 0);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        total_time += Time.deltaTime;
         // transform.position = transform.position + new Vector3(1 * 1 * Time.deltaTime, 0, 0);
         // SpeedForward();
         FollowPath();
@@ -32,7 +34,11 @@ public class ShipMove : MonoBehaviour
 
     void FollowPath()
     {
-        float[] info = LoadMovement.path[count++]; // x, y, psi
+        int count = (int)(total_time * accelerate / 0.1);
+        // stop when get destination
+        if (count >= LoadMovement.path.Count) count = LoadMovement.path.Count - 1;
+
+        float[] info = LoadMovement.path[count]; // x, y, psi
         float x = info[0];
         float y = info[1];
         float psi = info[2];
@@ -41,13 +47,8 @@ public class ShipMove : MonoBehaviour
         transform.position = new Vector3(x, 0, y);
 
         // float diff=
-        Vector3 angle = new Vector3((float)Math.Sin(Math.PI * psi / 180), 0, (float)Math.Cos(Math.PI * psi / 180));
+        // Vector3 angle = new Vector3((float)Math.Sin(Math.PI * psi / 180), 0, (float)Math.Cos(Math.PI * psi / 180));
         // transform.rotation = Quaternion.FromToRotation(Vector3.forward, angle);
         transform.eulerAngles = new Vector3(0, psi, 0);
-        // Update count
-        if (count >= LoadMovement.path.Count)
-        {
-            count = 0;
-        }
     }
 }
