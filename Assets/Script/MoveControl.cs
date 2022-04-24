@@ -30,19 +30,36 @@ public class MoveControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)) // 切换跟踪对象
+        // 切换跟踪对象
+        if (Input.GetKeyDown(KeyCode.Return)) { fi++; }
+        if (fi == follows.Count)
         {
-            fi++;
-            if (fi >= follows.Count) fi -= follows.Count;
-            Debug.Log("Enter");
+            OverView();
         }
-        Transform follow = follows[fi];
-        Follow(follow);
+        else if (fi < follows.Count)
+        {
+            Transform follow = follows[fi];
+            Follow(follow);
+        }
+        else
+        {
+            fi = 0;
+        }
+
     }
+    void OverView()
+    {
+        transform.position = new Vector3(250, 1030, 250);
+        transform.rotation = Quaternion.Euler(90, 0, 0);
+        // transform.eulerAngles = new Vector3(90, 0, 0);
+    }
+
+
     void Follow(Transform follow)
     {
         // x, z 跟随 usv
         transform.position = offset + follow.position - new Vector3(0, follow.position[1], 0);
+        transform.eulerAngles = new Vector3(60, 0, 0);
         // transform.position = offset + ship.position;
     }
     void ManualAdjust()
