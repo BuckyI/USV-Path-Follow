@@ -7,7 +7,7 @@ public class LoadMovement : MonoBehaviour
 {
     public TextAsset pathT;
     // 每组数据之间相距 0.1 s
-    static public List<float[]> path = new List<float[]>();
+    public List<float[]> path = new List<float[]>();
 
     // Start is called before the first frame update
     void Start()

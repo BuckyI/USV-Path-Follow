@@ -30,10 +30,11 @@ public class MoveControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("enter")) // 切换跟踪对象
+        if (Input.GetKeyDown(KeyCode.Return)) // 切换跟踪对象
         {
             fi++;
             if (fi >= follows.Count) fi -= follows.Count;
+            Debug.Log("Enter");
         }
         Transform follow = follows[fi];
         Follow(follow);

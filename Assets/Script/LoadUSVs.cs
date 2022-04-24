@@ -12,6 +12,7 @@ public class LoadUSVs : MonoBehaviour
         foreach (TextAsset item in paths)
         {
             GeneUSV(item);
+            Debug.Log("generate one usv");
         }
     }
 
@@ -25,7 +26,7 @@ public class LoadUSVs : MonoBehaviour
     {
         GameObject go = GameObject.Instantiate(Resources.Load("Prefabs/USV Variant")) as GameObject;
         go.transform.SetParent(GetComponent<Transform>());
-        go.GetComponent<LoadMovement>().pathT = path; // 给每艘船配置不同的路径
+        go.GetComponent<ShipMove>().pathT = path; // 给每艘船配置不同的路径
         GameObject.Find("Main Camera").GetComponent<MoveControl>().follows.Add(go.transform); // 摄像机跟随目标
         return go;
     }
