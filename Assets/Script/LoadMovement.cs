@@ -29,7 +29,7 @@ public class LoadMovement : MonoBehaviour
 
         // 初始化位置
         float[] init = path[0];
-        GetComponent<Transform>().position = new Vector3(init[0], 0, init[1]);
+        transform.position = new Vector3(init[0], 0, init[1]);
     }
 
     // Update is called once per frame
