@@ -22,7 +22,6 @@ public struct Parameter
 
 public class ADRC : MonoBehaviour
 {
-    [Header("控制器参数")]
     public Parameter para;
 
     public double r, y; // 参考输入和当前输出 作为 ADRC 的两个输入
@@ -40,7 +39,7 @@ public class ADRC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("i am alive!!!");
     }
 
     private void FixedUpdate()
