@@ -4,12 +4,13 @@ using UnityEngine;
 using System;
 using System.Text.RegularExpressions;
 
-public struct Task // 任务包括船, 路径点序列
+public class Task // 任务包括船, 路径点序列
 {
     public GameObject ship;
     public List<Vector2> path;
-    public int position; // index of path
+    public int position = 0; // index of path
     public MoveController controller;
+    public bool finished = false;
 }
 
 public class Navigation : MonoBehaviour
@@ -24,7 +25,6 @@ public class Navigation : MonoBehaviour
         {
             Task task = new Task();
             task.path = ReadPath(item);
-            task.position = 0;
 
             GameObject ship = GeneUSV();
 
@@ -64,7 +64,7 @@ public class Navigation : MonoBehaviour
                 Vector3 p2 = new Vector3(item.path[j + 1].x, 10, item.path[j + 1].y);
                 Debug.DrawLine(p1, p2, Color.white, 0);
             }
-            Debug.LogWarning(item.position.ToString());
+            // Debug.Log(item.position.ToString());
         }
     }
     float[] calc_ref(Task t)
@@ -82,19 +82,18 @@ public class Navigation : MonoBehaviour
         // 确定目标点 the closest point which has't been accessed 
         Vector2 target = path[t.position];
         Vector2 d = target - location;   // 期望更新矢量
-        while (d.sqrMagnitude < 100 && t.position < path.Count - 1)
+        while ((d.sqrMagnitude < 100) && (t.position < path.Count - 1))
         {
             t.position = t.position + 1; // 5m 之内视为已观测, 移到下一个点
             target = path[t.position];
             d = target - location;
         }
 
-        Debug.Log(location.ToString() + " goto " + target.ToString());
-
         // 计算给定值
-        if ((t.position == (path.Count - 1)) && d.sqrMagnitude < 4)
+        if (t.finished || ((t.position == (path.Count - 1)) && d.sqrMagnitude < 4))
         {
             // 目标点是终点, 且船已经到达终点 2m 范围内, 视为结束
+            t.finished = true;
             u = 0;
             yaw = psi;
             return new float[] { u, yaw };
@@ -124,11 +123,13 @@ public class Navigation : MonoBehaviour
                         index = i;
                     }
                 }
-                t.position = index; // 跟踪点转移到最近点, 下次更新生效
+                t.position = index + 5; // 跟踪点转移到最近点, 下次更新生效
+                // +5 往前看, 不加也行
             }
 
             // 计算期望速度值 (考虑距离和转角)
-            u = Mathf.Log10(d.magnitude + 1) * (1 + Mathf.Cos(yaw - psi)) * 0.5f;
+            // u = 2 * Mathf.Log10(d.magnitude + 1) * (1 + Mathf.Cos(yaw - psi)) * 0.5f;
+            u = 2 * Mathf.Log10(d.magnitude + 1);
             return new float[] { u, yaw };
         }
 
