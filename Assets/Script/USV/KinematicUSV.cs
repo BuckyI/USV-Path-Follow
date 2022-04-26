@@ -51,4 +51,9 @@ public class KinematicUSV : MonoBehaviour
         y = y + Time.fixedDeltaTime * dy;
         psi = psi + Time.fixedDeltaTime * dpsi;
     }
+
+    public Vector2 GetLocation()
+    {
+        return new Vector2((float)y, (float)x); // 获得 xOz 平面下的坐标, 方便计算
+    }
 }
