@@ -77,9 +77,9 @@ public class MoveController : MonoBehaviour
         controller_u.para = para_u;
         controller_yaw.para = para_yaw;
 
-        #region 参考输入(举例)
-        ref_u = 1;
-        ref_yaw = 1.7; // rad
+        #region 默认参考输入
+        ref_u = 0;
+        ref_yaw = 0; // rad
         #endregion
 
         model = GetComponent<KinematicUSV>(); // 用于获取船的状态信息
