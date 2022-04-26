@@ -9,6 +9,7 @@ public struct Task // 任务包括船, 路径点序列
     public GameObject ship;
     public List<Vector2> path;
     public int position; // index of path
+    public MoveController controller;
 }
 
 public class Navigation : MonoBehaviour
@@ -24,7 +25,8 @@ public class Navigation : MonoBehaviour
             Task task = new Task();
             task.path = ReadPath(item);
             task.position = 0;
-            task.ship = GeneUSV();
+
+            GameObject ship = GeneUSV();
 
             // 调整船的初始位置于路径点起点
             // ATTENTION: 要修改 Kinematic USV 的变量 而非 transform
@@ -33,6 +35,11 @@ public class Navigation : MonoBehaviour
             ship.GetComponent<KinematicUSV>().x = pos.y;
             ship.GetComponent<KinematicUSV>().y = pos.x;
 
+            // Add Controller
+            MoveController obj = (MoveController)ship.AddComponent(typeof(MoveController));
+
+            task.controller = obj;
+            task.ship = ship;
             tasks.Add(task);
         }
     }
@@ -40,6 +47,90 @@ public class Navigation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
+        foreach (Task item in tasks)
+        {
+            float[] refSignal = calc_ref(item);
+            item.controller.ref_u = refSignal[0];
+            item.controller.ref_yaw = refSignal[1];
+
+            for (int j = item.position; j < item.path.Count - 1; j++)
+            {
+                Vector3 p1 = new Vector3(item.path[j].x, 10, item.path[j].y);
+                Vector3 p2 = new Vector3(item.path[j + 1].x, 10, item.path[j + 1].y);
+                Debug.DrawLine(p1, p2, Color.white, 0);
+            }
+            Debug.LogWarning(item.position.ToString());
+        }
+    }
+    float[] calc_ref(Task t)
+    {
+        KinematicUSV data = t.ship.GetComponent<KinematicUSV>();
+        Vector2 location = data.GetLocation(); // (x,y)
+        float psi = (float)data.psi; // rad
+        List<Vector2> path = t.path;
+
+        // u: 期望速度
+        // yaw: 期望船角度
+        float u = 0.1f;
+        float yaw = 0;
+
+        // 确定目标点 the closest point which has't been accessed 
+        Vector2 target = path[t.position];
+        Vector2 d = target - location;   // 期望更新矢量
+        while (d.sqrMagnitude < 100 && t.position < path.Count - 1)
+        {
+            t.position = t.position + 1; // 5m 之内视为已观测, 移到下一个点
+            target = path[t.position];
+            d = target - location;
+        }
+
+        Debug.Log(location.ToString() + " goto " + target.ToString());
+
+        // 计算给定值
+        if ((t.position == (path.Count - 1)) && d.sqrMagnitude < 4)
+        {
+            // 目标点是终点, 且船已经到达终点 2m 范围内, 视为结束
+            u = 0;
+            yaw = psi;
+            return new float[] { u, yaw };
+        }
+        else
+        {
+            // 计算期望角度值 rad
+            yaw = -Vector2.SignedAngle(Vector2.up, d) * Mathf.Deg2Rad; // 加负号是因为 AngleY 是顺时针
+            while (Mathf.Abs(yaw - psi) > Mathf.PI)
+            {
+                if (yaw - psi > Mathf.PI) yaw = yaw - 2 * Mathf.PI;
+                else if (yaw - psi < -Mathf.PI) yaw = yaw + 2 * Mathf.PI;
+            }
+
+            if (Mathf.Abs(yaw - psi) > 0.5 * Mathf.PI)
+            {
+                // 如果发现目标点在船的后面(有跟踪失败的风险)
+                // 则策略切换到选择最近点作为目标点
+                int index = t.position;
+                float min_distance = d.sqrMagnitude;
+                for (int i = t.position + 1; i < t.path.Count; i++)
+                {
+                    float distance = (path[i] - location).sqrMagnitude;
+                    if (distance < min_distance)
+                    {
+                        min_distance = distance;
+                        index = i;
+                    }
+                }
+                t.position = index; // 跟踪点转移到最近点, 下次更新生效
+            }
+
+            // 计算期望速度值 (考虑距离和转角)
+            u = Mathf.Log10(d.magnitude + 1) * (1 + Mathf.Cos(yaw - psi)) * 0.5f;
+            return new float[] { u, yaw };
+        }
 
     }
 
