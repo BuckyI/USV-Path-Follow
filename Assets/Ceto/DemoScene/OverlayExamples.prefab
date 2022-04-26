@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &175850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458314}
+  - component: {fileID: 11421948}
+  m_Layer: 0
+  m_Name: ClipOverlayExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320.44437, y: 13.177569, z: 419.648}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434062}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11421948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5bbac2657db694c8bd4fcb27102ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkTextures: 1
+  heightTexture:
+    tex: {fileID: 2800000, guid: 6b938771da3393543add00863e269aab, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 4
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+    ignoreQuerys: 0
+  normalTexture:
+    tex: {fileID: 0}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  foamTexture:
+    tex: {fileID: 2800000, guid: 10345d8b9ef595042925003109c17b03, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    textureFoam: 1
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  clipTexture:
+    tex: {fileID: 2800000, guid: 6b938771da3393543add00863e269aab, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    ignoreQuerys: 0
+  width: 50
+  height: 50
+  m_rotationMode: 0
+  rotation: 0
+--- !u!1 &190716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484090}
+  - component: {fileID: 11401666}
+  m_Layer: 0
+  m_Name: HeightSubOverlayExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320.44437, y: 13.177569, z: 617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434062}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11401666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5bbac2657db694c8bd4fcb27102ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkTextures: 1
+  heightTexture:
+    tex: {fileID: 2800000, guid: 6b938771da3393543add00863e269aab, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: -4
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+    ignoreQuerys: 0
+  normalTexture:
+    tex: {fileID: 0}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  foamTexture:
+    tex: {fileID: 2800000, guid: 10345d8b9ef595042925003109c17b03, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    textureFoam: 1
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  clipTexture:
+    tex: {fileID: 0}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    ignoreQuerys: 0
+  width: 50
+  height: 50
+  m_rotationMode: 0
+  rotation: 0
+--- !u!1 &191182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434062}
+  m_Layer: 0
+  m_Name: OverlayExamples
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.555628, y: -11.177569, z: 25.35199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 458314}
+  - {fileID: 427328}
+  - {fileID: 484090}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &195146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427328}
+  - component: {fileID: 11406576}
+  m_Layer: 0
+  m_Name: HeightAddOverlayExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320.44437, y: 13.177569, z: 519}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434062}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11406576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5bbac2657db694c8bd4fcb27102ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkTextures: 1
+  heightTexture:
+    tex: {fileID: 2800000, guid: 6b938771da3393543add00863e269aab, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 4
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+    ignoreQuerys: 0
+  normalTexture:
+    tex: {fileID: 0}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  foamTexture:
+    tex: {fileID: 2800000, guid: 10345d8b9ef595042925003109c17b03, type: 3}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    textureFoam: 1
+    alpha: 1
+    mask: {fileID: 0}
+    maskMode: 0
+    maskAlpha: 1
+  clipTexture:
+    tex: {fileID: 0}
+    scaleUV: {x: 1, y: 1}
+    offsetUV: {x: 0, y: 0}
+    alpha: 1
+    ignoreQuerys: 0
+  width: 50
+  height: 50
+  m_rotationMode: 0
+  rotation: 0
