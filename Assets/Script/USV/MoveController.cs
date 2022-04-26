@@ -72,8 +72,8 @@ public class MoveController : MonoBehaviour
         para_yaw.a2 = 1.5;
         #endregion
 
-        controller_u = (ADRC)ScriptableObject.CreateInstance("ADRC");
-        controller_yaw = (ADRC)ScriptableObject.CreateInstance("ADRC");
+        controller_u = (ADRC)ScriptableObject.CreateInstance(typeof(ADRC));
+        controller_yaw = (ADRC)ScriptableObject.CreateInstance(typeof(ADRC));
         controller_u.para = para_u;
         controller_yaw.para = para_yaw;
 
