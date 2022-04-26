@@ -7,7 +7,8 @@ using System.Text.RegularExpressions;
 public struct Task // 任务包括船, 路径点序列
 {
     public GameObject ship;
-    public List<double[]> path;
+    public List<Vector2> path;
+    public int position; // index of path
 }
 
 public class Navigation : MonoBehaviour
@@ -22,15 +23,15 @@ public class Navigation : MonoBehaviour
         {
             Task task = new Task();
             task.path = ReadPath(item);
+            task.position = 0;
             task.ship = GeneUSV();
 
-            // 调整船的初始位置 
+            // 调整船的初始位置于路径点起点
             // ATTENTION: 要修改 Kinematic USV 的变量 而非 transform
             // 路径点坐标系和船的坐标系不一样
-            float x = (float)task.path[0][0];
-            float y = (float)task.path[0][1];
-            task.ship.GetComponent<KinematicUSV>().x = y;
-            task.ship.GetComponent<KinematicUSV>().y = x;
+            Vector2 pos = task.path[task.position];
+            task.ship.GetComponent<KinematicUSV>().x = pos.y;
+            task.ship.GetComponent<KinematicUSV>().y = pos.x;
 
             tasks.Add(task);
         }
@@ -51,17 +52,17 @@ public class Navigation : MonoBehaviour
         return go;
     }
 
-    List<double[]> ReadPath(TextAsset item) // read waypoints from csv
+    List<Vector2> ReadPath(TextAsset item) // read waypoints from csv
     {
-        List<double[]> single_path = new List<double[]>();
+        List<Vector2> single_path = new List<Vector2>();
         foreach (string t in item.text.Split('\n'))
         {
             Match m = Regex.Match(t, @"([\d\.]+),\s?([\d\.]+)");
             if (m.Success)
             {
-                double x = Convert.ToDouble(m.Groups[1].Value);
-                double y = Convert.ToDouble(m.Groups[2].Value);
-                single_path.Add(new double[] { x, y }); // store
+                float x = (float)Convert.ToDouble(m.Groups[1].Value);
+                float y = (float)Convert.ToDouble(m.Groups[2].Value);
+                single_path.Add(new Vector2(x, y)); // store
             }
         }
         Debug.Log(single_path.Count + " waypoints loaded.");
