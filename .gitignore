@@ -1,0 +1,39 @@
+# 只记录代码, 不存项目相关信息
+
+Logs
+Packages
+UserSettings
+Recordings
+.vscode
+Temp
+Library
+obj
+ProjectSettings
+# 只需要设置 FixedUpdate 0.01s , 太慢了控制性能不好
+
+# MATLAB
+run_data*
+slprj
+*.slxc
+
+# Python
+__pycache__/
+
+# .gitignore
+*.csproj
+*.sln
+*.meta 
+*.code-workspace
+
+
+!*.cs
+
+
+# *
+# !Assets
+# !Script
+# !USV
+# !*.cs
+# !Editor
+# !*.py
+# !*.ipynb

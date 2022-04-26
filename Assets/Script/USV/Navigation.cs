@@ -60,8 +60,8 @@ public class Navigation : MonoBehaviour
 
             for (int j = item.position; j < item.path.Count - 1; j++)
             {
-                Vector3 p1 = new Vector3(item.path[j].x, 10, item.path[j].y);
-                Vector3 p2 = new Vector3(item.path[j + 1].x, 10, item.path[j + 1].y);
+                Vector3 p1 = new Vector3(item.path[j].x, 5, item.path[j].y);
+                Vector3 p2 = new Vector3(item.path[j + 1].x, 5, item.path[j + 1].y);
                 Debug.DrawLine(p1, p2, Color.white, 0);
             }
             // Debug.Log(item.position.ToString());
@@ -84,7 +84,7 @@ public class Navigation : MonoBehaviour
         Vector2 d = target - location;   // 期望更新矢量
         while ((d.sqrMagnitude < 100) && (t.position < path.Count - 1))
         {
-            t.position = t.position + 1; // 5m 之内视为已观测, 移到下一个点
+            t.position = t.position + 1; // 10m 之内视为已观测, 移到下一个点
             target = path[t.position];
             d = target - location;
         }
@@ -123,8 +123,8 @@ public class Navigation : MonoBehaviour
                         index = i;
                     }
                 }
-                t.position = index + 5; // 跟踪点转移到最近点, 下次更新生效
-                // +5 往前看, 不加也行
+                t.position = index + 10; // 跟踪点转移到最近点, 下次更新生效
+                // +10 往前看, 不加也行
             }
 
             // 计算期望速度值 (考虑距离和转角)
