@@ -57,10 +57,22 @@ public class MoveControl : MonoBehaviour
 
     void Follow(Transform follow)
     {
-        // x, z 跟随 usv
-        transform.position = offset + follow.position - new Vector3(0, follow.position[1], 0);
-        transform.eulerAngles = new Vector3(60, 0, 0);
-        // transform.position = offset + ship.position;
+        // 如果有输入, 就手动调整
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        if (Input.GetAxis("Mouse ScrollWheel") != 0 || horizontalInput != 0 || verticalInput != 0)
+        {
+            this.GetComponent<Camera>().fieldOfView = this.GetComponent<Camera>().fieldOfView - Input.GetAxis("Mouse ScrollWheel") * sensitivetyMouseWheel;
+            transform.position = transform.position + new Vector3(horizontalInput * movementSpeed * Time.deltaTime, 0, verticalInput * movementSpeed * Time.deltaTime);
+        }
+        else // 无输入 x, z 跟随 usv
+        {
+            transform.position = offset + follow.position - new Vector3(0, follow.position[1], 0);
+            transform.eulerAngles = new Vector3(60, 0, 0);
+            // transform.position = offset + ship.position;
+        }
+
+
     }
     void ManualAdjust()
     {
