@@ -9,6 +9,7 @@ public class KinematicUSV : MonoBehaviour
 
     public double u, v, r, x, y, psi;// 状态
 
+    private double last_x, last_y, last_psi; // 保存之前的信息
     public float MAX_F = 50; // 推进器最大推力限定
 
 
@@ -20,7 +21,7 @@ public class KinematicUSV : MonoBehaviour
         Debug.Log("start!");
 
         //保存外部对 x, y, psi 的修改
-        // x = 0; y = 0; psi = 0; // 船的初始信息由创建者决定
+        // 船的初始信息 x, y, psi 由创建者决定
         UpdatePosition();
     }
 

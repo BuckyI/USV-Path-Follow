@@ -39,7 +39,8 @@ public class MoveControl : MonoBehaviour
         else if (fi < follows.Count)
         {
             Transform follow = follows[fi];
-            Follow(follow);
+            // Follow(follow);
+            SmoothFollow(follow);
         }
         else
         {

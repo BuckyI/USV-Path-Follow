@@ -17,6 +17,7 @@ public class Navigation : MonoBehaviour
 {
     public TextAsset[] pathsAssets; // 输入数据
     public List<Task> tasks = new List<Task>();
+    public bool paulse = false; // set true 如果你要屏蔽控制作用
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +55,8 @@ public class Navigation : MonoBehaviour
     {
         foreach (Task item in tasks)
         {
+            if (paulse) item.finished = true;
+
             float[] refSignal = calc_ref(item);
             item.controller.ref_u = refSignal[0];
             item.controller.ref_yaw = refSignal[1];
@@ -95,7 +98,8 @@ public class Navigation : MonoBehaviour
             // 目标点是终点, 且船已经到达终点 2m 范围内, 视为结束
             t.finished = true;
             u = 0;
-            yaw = psi;
+            yaw = 0;
+            // yaw = psi;
             return new float[] { u, yaw };
         }
         else
