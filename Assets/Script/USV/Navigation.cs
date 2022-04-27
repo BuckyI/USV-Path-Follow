@@ -123,8 +123,10 @@ public class Navigation : MonoBehaviour
                         index = i;
                     }
                 }
-                t.position = index + 10; // 跟踪点转移到最近点, 下次更新生效
-                // +10 往前看, 不加也行
+                // 跟踪点转移到最近点, 下次更新生效
+                t.position = index;
+                // t.position = index < t.path.Count ? index : t.path.Count - 1;
+
             }
 
             // 计算期望速度值 (考虑距离和转角)
