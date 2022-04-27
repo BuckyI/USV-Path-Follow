@@ -233,3 +233,15 @@ MonoBehaviour:
   y: 0
   psi: 0
   MAX_F: 100
+--- !u!114 &1451802121314576746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8563653144274134524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34fe31d8dc5ea184e8f608433ac9895d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -156,6 +156,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 91cb1a24a8b83ab4383bba2b391ae5b8, type: 3}
   - {fileID: 4900000, guid: 1a14b58b8f944974e81f58a657e96472, type: 3}
   - {fileID: 4900000, guid: f6967fa10be239f40b7cfc9b5f405404, type: 3}
+  paulse: 0
 --- !u!4 &114454329
 Transform:
   m_ObjectHideFlags: 0
@@ -164,7 +165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114454327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.30724, y: 23.938316, z: 46.162247}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1003644291}
@@ -200,15 +201,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144273748120, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.307243
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144273748120, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.938316
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144273748120, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.162247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144273748120, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_LocalRotation.w
@@ -468,27 +469,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8563653144273748120, guid: 789a080e78849fc49b71b10437861801, type: 3}
   m_PrefabInstance: {fileID: 324229651}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1003644292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003644288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905be0fe97bdf39448d0bc10ffffbc01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tau_u: 0.1
-  tau_r: 0
-  u: 0
-  v: 0
-  r: 0
-  x: 0
-  y: 0
-  psi: 0
-  MAX_F: 50
 --- !u!114 &1003644293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +476,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003644288}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 355d3725b01fdc545ac5fcf7d8171c62, type: 3}
   m_Name: 
