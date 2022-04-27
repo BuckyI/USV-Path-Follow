@@ -18,13 +18,17 @@ public class KinematicUSV : MonoBehaviour
         // TODO 设置初始值
         // TODO 如果跟踪效果不佳, 放宽 F 限制条件
         Debug.Log("start!");
+
+        //保存外部对 x, y, psi 的修改
+        // x = 0; y = 0; psi = 0; // 船的初始信息由创建者决定
+        UpdatePosition();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3((float)y, transform.position[1], (float)x);
-        transform.rotation = Quaternion.Euler(0, (float)(psi / Math.PI * 180), 0);
+        // transform.position = new Vector3((float)y, transform.position[1], (float)x);
+        // transform.rotation = Quaternion.Euler(0, (float)(psi / Math.PI * 180), 0);
     }
 
     private void FixedUpdate()
@@ -50,10 +54,36 @@ public class KinematicUSV : MonoBehaviour
         x = x + Time.fixedDeltaTime * dx;
         y = y + Time.fixedDeltaTime * dy;
         psi = psi + Time.fixedDeltaTime * dpsi;
+
+        // 计算外部更新, 保留外部对于模型的修改 (海浪的影响)
+        double delta_x = transform.position[2] - last_x;
+        double delta_y = transform.position[0] - last_y;
+        double delta_psi = transform.eulerAngles[1] * Mathf.Deg2Rad - last_psi;
+        // 角度的变化不会超过 PI (eulerAngles 0-360)
+        while (delta_psi > Mathf.PI) delta_psi -= 2 * Mathf.PI;
+        while (delta_psi < -Mathf.PI) delta_psi += 2 * Mathf.PI;
+        x += delta_x;
+        y += delta_y;
+        psi += delta_psi;
+
+        // 更新位置
+        UpdatePosition();
     }
 
     public Vector2 GetLocation()
     {
         return new Vector2((float)y, (float)x); // 获得 xOz 平面下的坐标, 方便计算
+    }
+
+    private void UpdatePosition()
+    {
+        transform.position = new Vector3((float)y, transform.position[1], (float)x);
+        Vector3 angle = transform.eulerAngles;
+        angle[1] = (float)psi * Mathf.Rad2Deg;
+        transform.eulerAngles = angle;
+
+        last_x = transform.position[2];
+        last_y = transform.position[0];
+        last_psi = transform.eulerAngles[1] * Mathf.Deg2Rad;
     }
 }
