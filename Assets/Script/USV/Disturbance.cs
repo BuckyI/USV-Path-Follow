@@ -6,19 +6,18 @@ using Ceto;
 public class Disturbance : MonoBehaviour
 {
     private Transform obj;
+    [Range(0, 1)]
+    public float degree = 0.5f; // 一个系数用于调整扰动程度
     // Start is called before the first frame update
     void Start()
     {
         obj = GetComponent<Transform>();
-
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        // 默认的 BoyantStructure 计算浮力并进行更新, 只会影响船的高度以及 rotation
-        // 其中会对船的 psi 进行干扰(幅度比较小, 只有 0.x°)
-        // 所以添加一个随波浪流动的干扰效果, 还是比较显著的
+        // 添加一个随波浪流动的扰动效果
         DriftInCurrent(Time.deltaTime);
     }
 
@@ -28,8 +27,9 @@ public class Disturbance : MonoBehaviour
         Ocean.Instance.QueryWaves(query);
         float dx = query.result.displacementX;
         float dz = query.result.displacementZ;
-        float speed = Ocean.Instance.Spectrum.waveSpeed; // 默认波速 1m/s
-        Vector3 velocity = new Vector3(dx, 0.0f, dz) * speed * deltaTime;
+        float speed = Ocean.Instance.Spectrum.waveSpeed;
+        // 默认波速 1m/s, 另外由水的密度, 船的质量影响, 扰动带来的位移不会同速, 这里取 0.5
+        Vector3 velocity = new Vector3(dx, 0.0f, dz) * speed * deltaTime * degree;
         transform.position = transform.position + velocity;
     }
 }
