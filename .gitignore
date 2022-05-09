@@ -22,18 +22,9 @@ __pycache__/
 # .gitignore
 *.csproj
 *.sln
-*.meta 
+# *.meta 
 *.code-workspace
 
 
 !*.cs
 
-
-# *
-# !Assets
-# !Script
-# !USV
-# !*.cs
-# !Editor
-# !*.py
-# !*.ipynb
