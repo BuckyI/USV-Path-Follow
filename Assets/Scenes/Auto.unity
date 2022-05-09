@@ -156,7 +156,8 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 91cb1a24a8b83ab4383bba2b391ae5b8, type: 3}
   - {fileID: 4900000, guid: 1a14b58b8f944974e81f58a657e96472, type: 3}
   - {fileID: 4900000, guid: f6967fa10be239f40b7cfc9b5f405404, type: 3}
-  paulse: 0
+  showRoute: 1
+  blockNavigation: 0
 --- !u!4 &114454329
 Transform:
   m_ObjectHideFlags: 0
@@ -249,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144274134524, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_Name
-      value: USV
+      value: USV example
       objectReference: {fileID: 0}
     - target: {fileID: 8563653144274134524, guid: 789a080e78849fc49b71b10437861801, type: 3}
       propertyPath: m_IsActive
@@ -476,7 +477,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003644288}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 355d3725b01fdc545ac5fcf7d8171c62, type: 3}
   m_Name: 
@@ -716,7 +717,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 422661074593783314, guid: 978b19cc9bda4444aaa5c956cb57f18d, type: 3}
       propertyPath: m_Name
-      value: Target
+      value: Target example
       objectReference: {fileID: 0}
     - target: {fileID: 422661074593783314, guid: 978b19cc9bda4444aaa5c956cb57f18d, type: 3}
       propertyPath: m_IsActive
