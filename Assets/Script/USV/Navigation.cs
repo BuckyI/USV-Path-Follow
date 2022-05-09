@@ -17,7 +17,11 @@ public class Navigation : MonoBehaviour
 {
     public TextAsset[] pathsAssets; // 输入数据
     public List<Task> tasks = new List<Task>();
-    public bool paulse = false; // set true 如果你要屏蔽控制作用
+
+    [Tooltip("显示剩余路径")]
+    public bool showRoute = true;
+    [Tooltip("可以(临时)屏蔽导航的更新作用")]
+    public bool blockNavigation = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,21 +57,31 @@ public class Navigation : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (blockNavigation) // 临时屏蔽导航作用, 并且让船停下来
+        {
+            foreach (Task item in tasks)
+            {
+                item.controller.ref_u = 0;
+                item.controller.ref_yaw = 0;
+            }
+            return;
+        }
+
         foreach (Task item in tasks)
         {
-            if (paulse) item.finished = true;
-
             float[] refSignal = calc_ref(item);
             item.controller.ref_u = refSignal[0];
             item.controller.ref_yaw = refSignal[1];
 
-            for (int j = item.position; j < item.path.Count - 1; j++)
+            if (showRoute)
             {
-                Vector3 p1 = new Vector3(item.path[j].x, 5, item.path[j].y);
-                Vector3 p2 = new Vector3(item.path[j + 1].x, 5, item.path[j + 1].y);
-                Debug.DrawLine(p1, p2, Color.white, 0);
+                for (int j = item.position; j < item.path.Count - 1; j++)
+                {
+                    Vector3 p1 = new Vector3(item.path[j].x, 5, item.path[j].y);
+                    Vector3 p2 = new Vector3(item.path[j + 1].x, 5, item.path[j + 1].y);
+                    Debug.DrawLine(p1, p2, Color.white, 0);
+                }
             }
-            // Debug.Log(item.position.ToString());
         }
     }
     float[] calc_ref(Task t)
@@ -82,7 +96,7 @@ public class Navigation : MonoBehaviour
         float u = 0.1f;
         float yaw = 0;
 
-        // 确定目标点 the closest point which has't been accessed 
+        // 确定目标点 the closest point which hasn't been accessed 
         Vector2 target = path[t.position];
         Vector2 d = target - location;   // 期望更新矢量
         while ((d.sqrMagnitude < 100) && (t.position < path.Count - 1))
@@ -169,81 +183,3 @@ public class Navigation : MonoBehaviour
     }
 
 }
-
-
-/*
-在 Unity 里面 psi 的位置好像有点不一样
-location x, y
-当前 psi
-path nx2 数组
-
-
-function [u, yaw, reached] = calc_ref(location,psi, path)
-% u: 期望速度
-% yaw: 期望船角度
-% reached: 是否到达终点
-u=0.1;
-yaw=0;
-reached=false;
-
-%% 确定目标点
-% the closest point which has't been accessed 
-persistent k;
-if isempty(k)
-    k=1;
-end
-
-while k<length(path)
-    target=path(k,:);
-    d=target-location'; % 期望更新矢量
-    if sum(d.^2)<25 && k<length(path) % 5m 之内视为已观测, 移到下一个点
-       k=k+1;
-    else
-        break;
-    end
-end
-
-d=path(k,:)-location'; % 期望更新矢量
-if sum(d.^2)<4 % 船距离终点2米, 视为到达终点, 停下来
-    u=0;
-    yaw=0;
-    reached=true;
-    return
-end
-
-%% 计算期望值
-% calculate yaw
-yaw=calc_yaw(d);
-while abs(yaw-psi)>pi
-    if yaw-psi>pi
-        yaw=yaw-2*pi;
-    elseif yaw-psi<-pi
-        yaw=yaw+2*pi;
-    end
-end
-
-% 如果发现目标点在船的后面(有跟踪失败的风险),则策略切换到选择最近点作为目标点
-if abs(yaw-psi)>0.5*pi
-    subpath=path(k:end,:);
-    dir=subpath-location';
-    distance=sum(dir.^2,2); % x^2+y^2
-    min_index = find(distance==min(distance));
-    k=k + min_index(1)-1; % 找到第一个距离最近的索引, 并转化成相对path的索引
-    % 切换 k, 下次更新
-end
-
-% calculate u
-u=log10(sqrt(sum(d.^2,"all"))+1)*(1+cos(yaw-psi))*0.5; % 考虑到距离, 转角确定速度
-
-function yaw=calc_yaw(d)
-    yaw=0;
-    if d(1)>0
-        yaw=atan(d(2)/d(1));
-    elseif d(1)<=0 && d(2) >0
-        yaw=pi+atan(d(2)/d(1));
-    elseif d(1)<=0 && d(2)<=0
-        yaw=-pi+atan(d(2)/d(1));
-    end
-
-
-*/
