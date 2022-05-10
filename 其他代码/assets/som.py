@@ -36,8 +36,9 @@ class Network():
         self.maze = maze  # True 是可通行, False 是不可通行
         self.node_number = targets.shape[0] * 15
         # 生成神经网络
-        center = targets.sum(axis=0) / len(targets)
-        self.network = np.random.rand(self.node_number, 2) * center
+        center = targets.sum(axis=0) / len(targets)  # 目标点坐标加权平均(重心)
+        # 随机化结点初始位置于重心附近
+        self.network = np.random.rand(self.node_number, 2) + center
         # 用在邻域函数里面的邻域半径
         self.radius = self.node_number
         self.learning_rate = 0.8  # 初始学习率设为0.8
@@ -48,12 +49,15 @@ class Network():
             self.network[0] = self.start
             self.network[-1] = self.end
 
+            # 更新
             self.traditional_som()
             self.window_som()
 
+            # 参数更新
             self.learning_rate *= 0.99997
             self.radius *= 0.9997
 
+            # 终止判断
             if self.radius < 1:
                 break
             elif self.learning_rate < 0.001:
@@ -149,6 +153,7 @@ class Network():
         return np.exp(-delta**2 / (2 * radix**2))
 
     def troubled_nodes(self, network):
+        """获取位于障碍区域内结点的索引"""
         def troubled_point(x, y, maze):
             if x >= maze.shape[1] or y >= maze.shape[0]:
                 return True
