@@ -51,7 +51,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-orange">
   
     
     
@@ -107,10 +107,10 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22z"/></svg>
             </label>
           
         
@@ -119,7 +119,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31z"/></svg>
             </label>
           
         
@@ -1560,16 +1560,16 @@
 <p>如何测量数据之间的相似性呢？</p>
 <ol>
 <li><strong>欧式距离法</strong>：利用输入向量之间的距离。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-39-05.png" /></li>
+<img alt="" src="assets/SOM/2020-07-31-14-39-05.png" /></li>
 <li><strong>余弦法</strong>：向量越接近，夹角越小<br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-40-12.png" /><br />
+<img alt="" src="assets/SOM/2020-07-31-14-40-12.png" /><br />
    余弦法适合<strong>所有输入向量的长度相同</strong>或者样本特征只与向量方向相关，与长短关系不大。</li>
 </ol>
 <h3 id="13">1.3 侧抑制与竞争<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>视网膜由许多小的光敏神经细胞组成。科学家们发现，当刺激某个细胞得到较大反应时，再刺激它邻近的细胞，前者的反应会减弱，这种现象被称之为“侧抑制”。</p>
 <blockquote>
-<p><img alt="alt" src="assets/SOM/2020-07-31-14-43-18.png" /><br />
+<p><img alt="" src="assets/SOM/2020-07-31-14-43-18.png" /><br />
 周围亮的背景抑制了中间灰色区域，使得中间灰色区域显得更暗。</p>
 </blockquote>
 <p>侧抑制有利于视觉从背景中分出对象，尤其在看物体的边角和轮廓时会提高视敏度，使对比的差异增强。<br />
@@ -1580,20 +1580,20 @@
 <h3 id="14">1.4 向量归一化<a class="headerlink" href="#14" title="Permanent link">&para;</a></h3>
 <p>让向量变成方向不变，长度为 1 的单位向量。<br />
 单位向量在进行比较时，只需要比较向量的夹角，即可比较相似性。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-47-48.png" /><br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-48-04.png" /></p>
+<img alt="" src="assets/SOM/2020-07-31-14-47-48.png" /><br />
+<img alt="" src="assets/SOM/2020-07-31-14-48-04.png" /></p>
 <h3 id="15">1.5 著名的竞争学习策略：胜者为王<a class="headerlink" href="#15" title="Permanent link">&para;</a></h3>
 <p>对于输入层接收的某一个输入 X，竞争层的所有神经元均有输出响应，其中<strong>响应值最大的神经元</strong>称为在竞争中获胜的神经元。<br />
 胜者为王采用了最强的抑制作用，即竞争获胜者“唯我独兴”，其它神经元的输出一律被抑制为 0 ，故称为 Winner Take All。</p>
 <ol>
 <li>向量归一化</li>
 <li>寻找获胜神经元：竞争层的所有神经元对应的<strong>权向量</strong>均与当前<strong>输入模式向量</strong>进行相似性比较，并将最相似的权向量判为竞争获胜神经元，记为 <span class="arithmatex">\(j^*\)</span>。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-54-42.png" /><br />
+<img alt="" src="assets/SOM/2020-07-31-14-54-42.png" /><br />
    可以证明向量归一化后，寻找最小欧氏距离只需要寻找最大<strong>点积</strong>。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-14-57-06.png" /></li>
+<img alt="" src="assets/SOM/2020-07-31-14-57-06.png" /></li>
 <li>网络输出与权值调整<br />
    只有获胜神经元输出为 1，其他神经元输出为 0. 获胜神经元可以调整自己的权值。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-15-00-33.png" /></li>
+<img alt="" src="assets/SOM/2020-07-31-15-00-33.png" /></li>
 </ol>
 <blockquote>
 <p>演变过程：<a href="https://www.bilibili.com/video/BV1ke411p7ga">ANN 第 36 讲：通过两个例子体会胜者为王权值调整的几何意义</a> 讲解的很详细。</p>
@@ -1607,9 +1607,9 @@
 <p>如果学习率保持不变，则进行到最后会不断震荡。<br />
 <strong>MyOpinion:</strong> 使用退火函数的优势在于，其最终停止的地方更加合理，想象一个盒子装着沙子，通过摇晃/拍打盒子让沙子震荡。刚开始拍打力气大，沙子震荡剧烈，慢慢地减小力度，则沙子会越来越小地调整。如果减小力度的速度比较合理，那么可以理解，沙子最终会完全平坦。</p>
 <h4 id="152">1.5.2 几何意义<a class="headerlink" href="#152" title="Permanent link">&para;</a></h4>
-<p><img alt="alt" src="assets/SOM/2020-07-31-15-01-35.png" /><br />
+<p><img alt="" src="assets/SOM/2020-07-31-15-01-35.png" /><br />
 黑色带<code>*</code>的线为互相竞争的结点，不带<code>*</code>的线为一个样本。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-15-06-23.png" /><br />
+<img alt="" src="assets/SOM/2020-07-31-15-06-23.png" /><br />
 获胜结点权值向量加了<strong>红色的变化向量</strong>，方向更加接近输入向量，同时长度不再为 1. 所以需要重新进行归一化。</p>
 <h2 id="2-som">2 SOM 概念<a class="headerlink" href="#2-som" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
@@ -1625,7 +1625,9 @@
 <p><strong>生物学基础：</strong><br />
 生物学研究的事实表明，在人脑的感觉通道上，神经元的组织原理是<strong>有序排列</strong>。因此当人脑通过感官接受外界的特定时空信息时，大脑皮层的<strong>特定区域</strong>兴奋，而且类似的外界信息在对应区域是<strong>连续映象</strong>的（图像形状接近，兴奋的神经元位置也接近）。<br />
 对于某一图形或某一频率的特定兴奋过程，神经元的有序排列以及对外界信息的连续映象是自组织特征映射网中竞争机制的生物学基础。<br />
-<img alt="大脑有点类似这种映射" src="assets/SOM/2020-07-30-17-14-16.png" title="大脑有点类似这种映射" /></p>
+<figure><img src="assets/SOM/2020-07-30-17-14-16.png" title="大脑有点类似这种映射" /><figcaption>大脑有点类似这种映射</figcaption>
+</figure>
+</p>
 <blockquote>
 <ul>
 <li>Matlab 的神经网络工具箱里面有：<a href="https://www.mathworks.com/help/deeplearning/gs/cluster-data-with-a-self-organizing-map.html;jsessionid=dc39e0187ccc2896a93a64c6cdc8">Cluster Data with a Self-Organizing Map</a></li>
@@ -1642,7 +1644,7 @@
 <blockquote>
 <p>SOM 是一种用于<strong>特征检测</strong>的无监督学习神经网络。它模拟人脑中处于不同区域的神经细胞分工不同的特点，即不同区域具有不同的响应特征，而且这一过程是自动完成的。SOM 用于生成训练样本的低维空间，可以将高维数据间复杂的非线性统计关系转化为简单的几何关系，且以低维的方式展现，因此通常在降维问题中会使用它。</p>
 </blockquote>
-<p><img alt="img" src="assets/SOM/2020-07-30-11-47-55.png" /></p>
+<p><img alt="" src="assets/SOM/2020-07-30-11-47-55.png" /></p>
 <ul>
 <li>非常适合高维数据的可视化，能够维持输入空间的拓扑结构</li>
 <li>具有很高的泛化能力，它甚至能识别之前从没遇过的输入样本</li>
@@ -1652,13 +1654,13 @@
 紫色区域表示训练数据的分布状况，白色网格表示从该分布中提取的当前训练数据。<br />
 首先，SOM 节点位于数据空间的任意位置。最接近训练数据的节点（黄色高亮部分）会被选中。<br />
 它和网格中的邻近节点一样，朝训练数据移动。在多次迭代之后，网格倾向于近似该种数据分布（下图最右）。<br />
-<img alt="img" src="assets/SOM/2020-07-30-11-40-46.png" title="逼近输入空间的过程" /></p>
+<img alt="" src="assets/SOM/2020-07-30-11-40-46.png" title="逼近输入空间的过程" /></p>
 <p><strong>有两种方式来解释 SOM：</strong></p>
 <ol>
 <li>解释一：在训练阶段，整个邻域中节点的权重往相同的方向移动。因此，SOM 形成语义映射，其中相似的样本被映射得彼此靠近，不同的样本被分隔开。这可以通过 U-Matrix 来可视化</li>
 <li>解释二：另一种方法是将神经元权重视为输入空间的指针。它们形成对训练样本分布的离散近似。更多的神经元指向的区域，训练样本浓度较高；而较少神经元指向的区域，样本浓度较低。</li>
 </ol>
-<p><img alt="alt" src="assets/SOM/2020-07-30-23-46-11.png" /></p>
+<p><img alt="" src="assets/SOM/2020-07-30-23-46-11.png" /></p>
 <p>当我们将训练数据输入到网络中时，会计算出所有权重向量的欧几里德距离。<br />
 权重向量与输入最相似的神经元称为<strong>最佳匹配单元（BMU）</strong>。BMU 的权重和 SOM 网格中靠近它的神经元会朝着输入矢量的方向调整。<br />
 一旦确定了 BMU，下一步就是计算其它哪些节点在 BMU 的邻域内。</p>
@@ -1688,20 +1690,28 @@ SOM 的作用是将这个网格铺满数据存在的空间。<br />
 <span class="arithmatex">\(d_j(x)=\sum_{i=1}^{D}(x_i-w_{ji})^2\)</span></li>
 </ul>
 <h2 id="4">4 网络结构<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p><img alt="img" src="assets/SOM/2020-07-30-17-10-30.png" /></p>
+<p><img alt="" src="assets/SOM/2020-07-30-17-10-30.png" /></p>
 <p>SOM 的网络结构有 2 层：输入层、输出层 （也叫竞争层）<br />
-<img alt="网络结构" src="assets/SOM/2020-07-30-16-54-40.png" title="网络结构" /></p>
+<figure><img src="assets/SOM/2020-07-30-16-54-40.png" title="网络结构" /><figcaption>网络结构</figcaption>
+</figure>
+</p>
 <ol>
 <li><strong>输入层</strong>神经元的数量是由<strong>输入向量的维度</strong>决定的，一个神经元对应一个特征。</li>
 <li>SOM 网络结构的区别主要在<strong>竞争层</strong>：可以有 1 维、2 维 （最常见的）<blockquote>
 <p>竞争层也可以有更高的维度。不过出于可视化的目的，高维竞争层用的比较少<br />
-<img alt="1" src="assets/SOM/2020-07-31-15-40-17.png" /><br />
-<img alt="3" src="assets/SOM/2020-07-31-15-40-44.png" /></p>
+<figure><img src="assets/SOM/2020-07-31-15-40-17.png" /><figcaption>1</figcaption>
+</figure>
+<br />
+<figure><img src="assets/SOM/2020-07-31-15-40-44.png" /><figcaption>3</figcaption>
+</figure>
+</p>
 </blockquote>
 </li>
 </ol>
 <p>二维平面有 2 种平面结构：<br />
-<img alt="平面结构" src="assets/SOM/2020-07-30-17-00-09.png" title="平面结构" /></p>
+<figure><img src="assets/SOM/2020-07-30-17-00-09.png" title="平面结构" /><figcaption>平面结构</figcaption>
+</figure>
+</p>
 <ol>
 <li>Rectangular（矩形的）</li>
 <li>Hexagonal（六角形的）</li>
@@ -1717,11 +1727,14 @@ SOM 的作用是将这个网格铺满数据存在的空间。<br />
 <p>一条经验公式：（N：训练样本的个数）<br />
 <span class="arithmatex">\(竞争层最少节点数量= 5\sqrt{N}\)</span><br />
 这个公式在另一个视频里也得到了印证，据说在一个 paper 里面有证明。（谁知道呢- - 实际使用的时候可以自己多试几个，结点数目与邻域半径这两个超参数要互相配合）<br />
-<img alt="alt" src="assets/SOM/2020-07-31-22-10-06.png" /></p>
+<img alt="" src="assets/SOM/2020-07-31-22-10-06.png" /></p>
 <p>如果是正方形输出层，边长等于 <strong>竞争层节点数再开一次根号</strong>，并向上取整就行（<code>math.ceil</code>函数）。<br />
 <code>x,y=sqrt（竞争层的节点数量）</code></p>
 <h2 id="5-som">5 训练 SOM 的步骤<a class="headerlink" href="#5-som" title="Permanent link">&para;</a></h2>
-<p><img alt="训练过程" src="assets/SOM/%E8%AE%AD%E7%BB%83%E8%BF%87%E7%A8%8B.gif" title="训练过程" /></p>
+<p>
+<figure><img src="assets/SOM/%E8%AE%AD%E7%BB%83%E8%BF%87%E7%A8%8B.gif" title="训练过程" /><figcaption>训练过程</figcaption>
+</figure>
+</p>
 <ol>
 <li>初始化每个节点的权重。<br />
    权重设置为<strong>标准化</strong>小型随机值。<blockquote>
@@ -1746,7 +1759,10 @@ SOM 的作用是将这个网格铺满数据存在的空间。<br />
 </li>
 <li>返回步骤 2 重复进行，迭代 N 次。</li>
 </ol>
-<p><img alt="流程图" src="assets/SOM/2020-07-31-16-19-04.png" title="流程图" /></p>
+<p>
+<figure><img src="assets/SOM/2020-07-31-16-19-04.png" title="流程图" /><figcaption>流程图</figcaption>
+</figure>
+</p>
 <h3 id="51">5.1 初始化中的数据处理<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
 <h4 id="511">5.1.1 输入层初始化<a class="headerlink" href="#511" title="Permanent link">&para;</a></h4>
 <p>由于 SOM 是基于距离的算法，所以输入矩阵 X 中的类别型特征必须进行 One-Hot 编码。</p>
@@ -1786,12 +1802,18 @@ $$<br />
 <span class="arithmatex">\(\eta(t,N)\)</span>中<span class="arithmatex">\(t\)</span>为训练轮数，<span class="arithmatex">\(N\)</span>为邻域内第<span class="arithmatex">\(j\)</span>个神经元与获胜神经元<span class="arithmatex">\(j^*\)</span>之间的拓扑距离。<br />
 两者越大，<span class="arithmatex">\(\eta\)</span>越小，但具体表达式可以自己构造。</p>
 <blockquote>
-<p><img alt="其中一个可能的结果" src="assets/SOM/2020-07-31-16-14-32.png" title="其中一个可能的构造方式" /><br />
+<p>
+<figure><img src="assets/SOM/2020-07-31-16-14-32.png" title="其中一个可能的构造方式" /><figcaption>其中一个可能的结果</figcaption>
+</figure>
+<br />
 感觉<strong>实际上</strong>这个就是学习率（退火函数）与邻域函数（距离越远影响越小）的乘积，<br />
 这里列出了学习率三种可能的衰减情况（或许需要自己实践哪个更好用一些？），而邻域函数使用指数函数衰减。<br />
 下面的同样思路，只不过学习率使用负指数函数，邻域函数使用高斯函数。</p>
 </blockquote>
-<p><img alt="公式" src="assets/SOM/2020-07-31-23-48-46.png" title="公式" /><br />
+<p>
+<figure><img src="assets/SOM/2020-07-31-23-48-46.png" title="公式" /><figcaption>公式</figcaption>
+</figure>
+<br />
 图片来源 <a href="https://www.bilibili.com/video/BV1UZ4y1x7di">B 站视频</a>，讲得非常详细！<br />
 lateral distance 计算方法似乎也是欧几里德距离。<br />
 不过这里应该指的是神经元之间的拓扑距离吧，图中使用<code>w</code>是神经元的特征向量，计算出的是相似度而不是拓扑距离，我感觉回来再仔细看看他那个代码。<!-- TODO: 啊啊啊 --></p>
@@ -1811,7 +1833,7 @@ $$</p>
 <blockquote>
 <p>前面讲的赢家通吃，只有胜者本身才能更改权值不同，在 SOM 中赢家附近的结点也会由近及远受到影响。<br />
 这样带来的结果则是输出网络可以保留原来的结构，原来挨着的神经元在调整位置过后还挨着，这样比较接近生物神经元的特定响应连续映像的特性。<br />
-<img alt="alt" src="assets/SOM/2020-07-31-15-55-47.png" /><br />
+<img alt="" src="assets/SOM/2020-07-31-15-55-47.png" /><br />
 左侧结点顺序被打乱为 14253，右侧仍然保留了 12345.</p>
 </blockquote>
 <p>neighborhood 函数用来确定优胜节点对其近邻节点的<strong>影响强弱</strong>，即优胜邻域中每个节点的更新幅度。<br />
@@ -1833,14 +1855,16 @@ $$</p>
 <blockquote>
 <p><a href="www.bilibili.com/video/BV1jK4y187Ea">BV1jK4y187Ea</a> 所述的理论中，影响强弱与距离的关系则如图所示。<br />
 a 中两个函数合并为 b，随着距离增加影响逐渐减小甚至排斥（有点像<strong>侧抑制</strong>），简化形式则为 c，d<br />
-<img alt="alt" src="assets/SOM/2020-07-31-15-44-23.png" /><br />
-<img alt="alt" src="assets/SOM/2020-08-02-18-33-22.png" /></p>
+<img alt="" src="assets/SOM/2020-07-31-15-44-23.png" /><br />
+<img alt="" src="assets/SOM/2020-08-02-18-33-22.png" /></p>
 </blockquote>
 <h3 id="62">6.2 学习率 α、邻域范围 σ 随时间衰减<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
 <p>衰减函数 decay func “最常用”（原文说的）的的是：<span class="arithmatex">\(\frac{1}{1+\frac{t}{T}}\)</span><br />
 <code>t</code> 代表当前迭代次数<br />
 <code>T</code> = 总迭代次数 / 2<br />
-<img alt="递减图像" src="assets/SOM/2020-07-30-22-42-56.png" title="递减图像" /></p>
+<figure><img src="assets/SOM/2020-07-30-22-42-56.png" title="递减图像" /><figcaption>递减图像</figcaption>
+</figure>
+</p>
 <blockquote>
 <p>公式正文所列的公式中，衰减函数则是通过指数函数：<span class="arithmatex">\(e^{-\frac{t}{\tau}}\)</span><br />
 其中<span class="arithmatex">\(\tau\)</span>是超参数，在<span class="arithmatex">\(\alpha\)</span>以及<span class="arithmatex">\(\sigma\)</span>的衰减中不相同。</p>
@@ -1853,15 +1877,20 @@ $$<br />
 <p>优胜邻域/邻域半径开始定的很大，但大小随着训练次数增加不断收缩至 0.</p>
 <h2 id="7-som">7 SOM 应用<a class="headerlink" href="#7-som" title="Permanent link">&para;</a></h2>
 <p>SOM 通常用在<strong>可视化</strong>中。比如下图，世界各国贫困数据的可视化。生活质量较高的国家聚集在左上方，而贫困最严重的国家聚集在右下方。<br />
-<img alt="img" src="assets/SOM/2020-07-30-16-35-52.png" /><br />
-<img alt="文本分析，类似词语" src="assets/SOM/2020-07-30-17-23-26.png" title="文本分析，类似词语" /></p>
+<img alt="" src="assets/SOM/2020-07-30-16-35-52.png" /><br />
+<figure><img src="assets/SOM/2020-07-30-17-23-26.png" title="文本分析，类似词语" /><figcaption>文本分析，类似词语</figcaption>
+</figure>
+</p>
 <ul>
 <li>数据压缩</li>
 <li>语音识别</li>
 <li>分离音源</li>
 <li>欺诈检测</li>
 </ul>
-<p><img alt="情感识别" src="assets/SOM/2020-07-30-18-05-20.png" title="情感识别" /></p>
+<p>
+<figure><img src="assets/SOM/2020-07-30-18-05-20.png" title="情感识别" /><figcaption>情感识别</figcaption>
+</figure>
+</p>
 <p>由于 SOM 可以将高维数据映射到 2 维数据，所以它可以适用于几乎所有领域，将复杂的数据进行简化归类，并且通过欧几里何距离形成可视化图像。</p>
 <ul>
 <li>保序映射：将输入空间的样本模式类有序地映射在输出层上。（原来挨得近的映射后还挨得近）</li>
@@ -1869,7 +1898,7 @@ $$<br />
 <li>特征抽取：高维空间的向量的特征在低维特征空间更加清晰地表达</li>
 </ul>
 <h2 id="8">8 开源实现以及可以使用的工具<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
-<p><img alt="img" src="assets/SOM/2020-07-30-19-05-50.png" /><br />
+<p><img alt="" src="assets/SOM/2020-07-30-19-05-50.png" /><br />
 部分可视化所用工具见 <a href="#可视化">这里</a></p>
 <h3 id="81-minisom">8.1 miniSom 库<a class="headerlink" href="#81-minisom" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/JustGlowing/minisom">JustGlowing/minisom: MiniSom is a minimalistic implementation of the Self Organizing Maps</a></p>
@@ -1903,8 +1932,8 @@ $$<br />
 <li>在矩阵中较大的值表示该节点与其邻近节点在输出空间离得远</li>
 </ul>
 <p>因此，U-matrix 可以看作输入空间中数据点概率密度在二维平面上的映射。</p>
-<p><img alt="img" src="assets/SOM/2020-07-30-23-32-36.png" /><br />
-<img alt="img" src="assets/SOM/2020-07-30-23-32-44.png" /></p>
+<p><img alt="" src="assets/SOM/2020-07-30-23-32-36.png" /><br />
+<img alt="" src="assets/SOM/2020-07-30-23-32-44.png" /></p>
 <p>通常使用 Heatmap 来可视化 U-matrix，且用颜色编码 （数值越大，颜色越深）<br />
 在图上，浅色区域可以理解为 簇的簇心，深色区域可以理解为分隔边界</p>
 <div class="highlight"><pre><span></span><code>#<span class="w"> </span><span class="n">MINISOM</span><span class="w"> </span><span class="n">API</span><span class="w"></span>
@@ -1912,7 +1941,7 @@ $$<br />
 </code></pre></div>
 <h3 id="92-component-plane">9.2 Component Plane<a class="headerlink" href="#92-component-plane" title="Permanent link">&para;</a></h3>
 <p>通过 component plane，能够可视化相关变量或者额外变量的分布。<br />
-<img alt="img" src="assets/SOM/2020-07-30-23-34-33.png" /></p>
+<img alt="" src="assets/SOM/2020-07-30-23-34-33.png" /></p>
 <p>Component plane 可以理解成 SOM 网络的切片版本。每一个 component plane 包含了一个输入特征的相对分布。</p>
 <p>在这种图中，深色表示相对小的取值，浅色表示相对大的取值。</p>
 <p>通过比较 component planes，我们可以看出两个 component 的相关信。如果看上去类似，那么它们强相关</p>

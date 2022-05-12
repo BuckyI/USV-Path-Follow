@@ -44,7 +44,7 @@ plt.imshow(omg)
 
     <matplotlib.image.AxesImage at 0x2dea3915f10>
 
-![svg](output_4_1.svg)
+![](output_4_1.svg)
 
 关于**坐标**：
 
@@ -79,7 +79,7 @@ plt.imshow(img)  # 得到一个 500x500 大小的地图
 
     <matplotlib.image.AxesImage at 0x2dea39487c0>
 
-![svg](output_6_1.svg)
+![](output_6_1.svg)
 
 获取**障碍物**信息：
 
@@ -116,7 +116,7 @@ plt.scatter(target[:, 0], target[:, 1], color="#6495ED", s=5, marker="x")
 
     <matplotlib.collections.PathCollection at 0x2dec5422f40>
 
-![svg](output_9_1.svg)
+![](output_9_1.svg)
 
 ### 1.3 存档点
 
@@ -171,7 +171,7 @@ plt.scatter(target[:, 0], target[:, 1], color="#6495ED", s=5, marker="x")
 
     <matplotlib.collections.PathCollection at 0x2dec5496520>
 
-![svg](output_16_1.svg)
+![](output_16_1.svg)
 
 ## 2 分配任务点
 
@@ -242,7 +242,7 @@ for i in affinity_matrix:
             plt.scatter(index, j)
 ```
 
-![svg](output_21_0.svg)
+![](output_21_0.svg)
 
 ### 2.2 谱聚类
 
@@ -276,7 +276,7 @@ plt.scatter(target[:, 0],
 
     <matplotlib.collections.PathCollection at 0x2dec7d496a0>
 
-![svg](output_23_1.svg)
+![](output_23_1.svg)
 
 ### 2.3 存档点
 
@@ -530,7 +530,7 @@ for path in routes:  # 画路线
     # axis.scatter(path[:,0],path[:,1],s=1)
 ```
 
-![svg](output_47_0.svg)
+![](output_47_0.svg)
 
 ### 3.4 存档点
 
@@ -578,7 +578,7 @@ for path in routes:  # 画路线
     # axis.scatter(path[:,0],path[:,1],s=1)
 ```
 
-![svg](output_52_0.svg)
+![](output_52_0.svg)
 
 ## 4 路线平滑处理
 
@@ -614,7 +614,7 @@ plt.plot(x_new, y_new, '-')
 plt.show()
 ```
 
-![svg](output_56_0.svg)
+![](output_56_0.svg)
 
 #### 4.1.1 在这里进行一定的改进
 
@@ -694,7 +694,7 @@ for i, j in zip(routes, splined_routes):
 
 ```
 
-![svg](output_60_0.svg)
+![](output_60_0.svg)
 
 ## 5 最终结果输出
 

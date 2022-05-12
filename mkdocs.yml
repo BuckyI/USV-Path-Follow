@@ -6,12 +6,14 @@ theme:
     - navigation.top
   palette: 
     - scheme: default
+      primary: red
+      accent: deep orange
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
 
 use_directory_urls: false # 此项用于 build 结果可以本地打开
@@ -20,7 +22,7 @@ site_dir: 'docs'
 
 
 markdown_extensions:
-  # - markdown_captions # 给图片添加标题 可选
+  - markdown_captions # 给图片添加标题 可选
   - sane_lists # 优化列表显示
   - admonition
   - pymdownx.details
