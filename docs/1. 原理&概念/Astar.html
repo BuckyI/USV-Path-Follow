@@ -1,0 +1,1554 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>A STAR - ProjectDocument</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a-star" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="ProjectDocument" class="md-header__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ProjectDocument
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A STAR
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ProjectDocument" class="md-nav__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ProjectDocument
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        README
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. 原理&概念
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. 原理&概念" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 原理&概念
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          A STAR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Astar.html" class="md-nav__link md-nav__link--active">
+        A STAR
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 原理与实现方法
+  </a>
+  
+    <nav class="md-nav" aria-label="1 原理与实现方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 参考代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 其他参考资料
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 具体实现
+  </a>
+  
+    <nav class="md-nav" aria-label="2 具体实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 原版
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 原版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-tips" class="md-nav__link">
+    2.1.1 Tips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-a" class="md-nav__link">
+    2.2 对图片矩阵使用 A*算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-troubleshooting" class="md-nav__link">
+    2.3 Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 代码实现（旧）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 关于路径长度的讨论
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SOM.html" class="md-nav__link">
+        SOM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%97%A0%E4%BA%BA%E8%89%87.html" class="md-nav__link">
+        无人艇
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%B5%B7%E6%B5%AA.html" class="md-nav__link">
+        海浪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA.html" class="md-nav__link">
+        路径跟踪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/index.html">自抗扰控制</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="自抗扰控制" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          自抗扰控制
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%80%A6%E5%90%88%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        耦合系统控制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8%20%E6%9C%B1%E6%96%8C.html" class="md-nav__link">
+        自抗扰控制入门 朱斌
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0.html" class="md-nav__link">
+        自抗扰控制原理笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/index.html">视频笔记</a>
+          
+            <label for="__nav_2_6_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="视频笔记" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          视频笔记
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/ADRC%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        ADRC 设计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E8%96%9B%E6%96%87%E8%B6%85%20%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        薛文超 自抗扰控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. 代码设计
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 代码设计" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 代码设计
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/%E5%85%B6%E4%BB%96.html" class="md-nav__link">
+        其他
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/1.%20%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/index.html">1. 路径规划</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="1. 路径规划" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 路径规划
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/1.%20%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/code.html" class="md-nav__link">
+        代码设计
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          2. 无人艇、路径跟踪
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 无人艇、路径跟踪" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 无人艇、路径跟踪
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/MATLAB.html" class="md-nav__link">
+        MATLAB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Unity3D.html" class="md-nav__link">
+        Unity3D
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/%E6%A8%A1%E5%9E%8B%E7%BC%96%E5%86%99.html" class="md-nav__link">
+        模型编写
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/index.html">Scene</a>
+          
+            <label for="__nav_3_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Scene" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Scene
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_2" type="checkbox" id="__nav_3_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Ceto/index.html">Ceto</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Ceto" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ceto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_3" type="checkbox" id="__nav_3_3_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4_3">
+          Terrain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Terrain" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Terrain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Terrain/%E5%9C%B0%E5%9B%BE%E7%94%9F%E6%88%90.html" class="md-nav__link">
+        地图生成
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../3.%20Archived/index.html">3. Archived</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="3. Archived" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3. Archived
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BB%BC%E8%BF%B0.html" class="md-nav__link">
+        文献阅读与综述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          开题报告
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="开题报告" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          开题报告
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.html" class="md-nav__link">
+        开题报告
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          文献翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="文献翻译" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          文献翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91.html" class="md-nav__link">
+        在快速变化的干扰下，全动式自主潜水器的路径跟踪控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 原理与实现方法
+  </a>
+  
+    <nav class="md-nav" aria-label="1 原理与实现方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 参考代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 其他参考资料
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 具体实现
+  </a>
+  
+    <nav class="md-nav" aria-label="2 具体实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 原版
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 原版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211-tips" class="md-nav__link">
+    2.1.1 Tips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-a" class="md-nav__link">
+    2.2 对图片矩阵使用 A*算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-troubleshooting" class="md-nav__link">
+    2.3 Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 代码实现（旧）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 关于路径长度的讨论
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="a-star">A STAR<a class="headerlink" href="#a-star" title="Permanent link">&para;</a></h1>
+<h2 id="1">1 原理与实现方法<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.bilibili.com/video/BV1bv411y79P?from=search&amp;seid=3064739554010128000&amp;spm_id_from=333.337.0.0">A *寻路算法详解 #A 星 #启发式搜索 bilibili</a><br />
+<a href="https://www.redblobgames.com/pathfinding/a-star/implementation.html#troubleshooting-ugly-path">Implementation of A*</a><br />
+Python 版本的实现看 <code>1. Python Implementation</code> 全部部分.<br />
+作者讲的非常详细，从简单到复杂，广度优先算法&rarr;Djakarta 算法&rarr;A *算法. 其中有一些思想和改进建议.</p>
+<p>从一个一般性原理来说，写代码需要准备以下三个部分，然后就使用作者提供的<code>a_star_search</code>实现就可以了.</p>
+<blockquote>
+<p>Knowledge about grids is in the graph class (GridWithWeights), the locations, and in the heuristic function. Replace those three and you can use the A* algorithm code with any other graph structure.</p>
+</blockquote>
+<ul>
+<li>the graph class: 图的信息，结点如何相连之类的</li>
+<li>the locations: 如何定义一个结点</li>
+<li>the heuristic function</li>
+</ul>
+<p>实际上，需要自己根据教程，<strong>结合具体情况实现代码</strong>，而非拿现成的.</p>
+<p>上面教程的翻译版本，可以看看：<br />
+<a href="https://zhuanlan.zhihu.com/p/113008274">【翻译】由浅入深 A* 算法介绍 - 知乎</a><br />
+<a href="https://zhuanlan.zhihu.com/p/113390876">【翻译】A* 算法实现 - 知乎</a></p>
+<h3 id="11">1.1 参考代码<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p><code>Implementation of A*</code> 里面有 <code>implementation.py</code> 的代码 <a href="https://www.redblobgames.com/pathfinding/a-star/implementation.py">链接</a> ，不过由于有一定年代了，现在应该不能直接用. 之前 <code>typing</code> 包含的东西被移动到了其他地方或者干脆变成了全局通用的. （例如之前的 <code>typing.Dict</code> 变成了 <code>dict</code>)</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+<span class="c1">##some of these types are deprecated: https://www.python.org/dev/peps/pep-0585/</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Protocol</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Optional</span>
+</code></pre></div>
+<p><code>【翻译】A* 算法实现 - 知乎</code> 里面有一份别人学习实现的代码（和原版的略有不同，改正了过时的内容，但是有一点删减）<br />
+<a href="https://github.com/yangruihan/Notes/tree/master/GameDevelopment/GameDevelop/Codes/AStar%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0">Notes/GameDevelopment/GameDevelop/Codes/AStar 算法实现 at master · yangruihan/Notes</a></p>
+<p>✨✨✨ <strong>代码实现举例</strong> <a href="assets/Astar/Astar.7z">Astar.7z</a></p>
+<h3 id="12">1.2 其他参考资料<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p><a href="http://www-cs-students.stanford.edu/~amitp/gameprog.html#Paths">Amit’s Game Programming Information</a> 找了好久才才发现有这个页面… 有很多值得学习的东西.<br />
+作者的 GitHub<br />
+<a href="https://github.com/redblobgames">redblobgames (Amit Patel)</a><br />
+<a href="https://github.com/amitp">amitp (Amit Patel)</a></p>
+<hr />
+<p><a href="https://paul.pub/a-star-algorithm/">路径规划之 A* 算法</a> 差不多是另一个实现，没仔细看.</p>
+<h2 id="2">2 具体实现<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 原版<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>下面这段代码直接来源于作者的说明以及搜集来的代码（都在上一节）</p>
+<ul>
+<li>the graph class: <code>GridWithWeights</code>, 一个栅格化的图，只存储长宽，还有障碍物的位置</li>
+<li>the locations: 其实就是元组 <code>(x, y)</code></li>
+<li>the heuristic function: 当前位置与目标点的曼哈顿距离</li>
+</ul>
+<blockquote>
+<p>注意：<br />
+据作者所说，很多实现用到了 Node 类，但是他倾向于使用字典存储（上一个节点，当前代价）<br />
+当然如果是二维栅格图，可以使用矩阵存储（后面有一版）</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">heapq</span>
+
+<span class="k">class</span> <span class="nc">GridWithWeights</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">walls</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">from_node</span><span class="p">,</span> <span class="n">to_node</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">to_node</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">in_bounds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="nb">id</span>
+        <span class="k">return</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+
+    <span class="k">def</span> <span class="nf">passable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">walls</span>
+
+    <span class="k">def</span> <span class="nf">neighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="nb">id</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">in_bounds</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">passable</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">results</span>
+
+<span class="k">class</span> <span class="nc">PriorityQueue</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">elements</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">empty</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">elements</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">put</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">priority</span><span class="p">):</span>
+        <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">elements</span><span class="p">,</span> <span class="p">(</span><span class="n">priority</span><span class="p">,</span> <span class="n">item</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">elements</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">heuristic</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="s2">&quot;a,b: GridLocation&quot;</span>
+    <span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">)</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span> <span class="o">=</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">y1</span> <span class="o">-</span> <span class="n">y2</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">a_star_search</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">):</span>
+    <span class="n">frontier</span> <span class="o">=</span> <span class="n">PriorityQueue</span><span class="p">()</span>
+    <span class="n">frontier</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">came_from</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># : Dict[Location, Optional[Location]]</span>
+    <span class="n">cost_so_far</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># : Dict[Location, float]</span>
+    <span class="n">came_from</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">cost_so_far</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">frontier</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span>
+        <span class="n">current</span> <span class="o">=</span> <span class="n">frontier</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>  <span class="c1"># Location</span>
+
+        <span class="k">if</span> <span class="n">current</span> <span class="o">==</span> <span class="n">goal</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="k">for</span> <span class="nb">next</span> <span class="ow">in</span> <span class="n">graph</span><span class="o">.</span><span class="n">neighbors</span><span class="p">(</span><span class="n">current</span><span class="p">):</span>
+            <span class="n">new_cost</span> <span class="o">=</span> <span class="n">cost_so_far</span><span class="p">[</span><span class="n">current</span><span class="p">]</span> <span class="o">+</span> <span class="n">graph</span><span class="o">.</span><span class="n">cost</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="nb">next</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">next</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cost_so_far</span> <span class="ow">or</span> <span class="n">new_cost</span> <span class="o">&lt;</span> <span class="n">cost_so_far</span><span class="p">[</span><span class="nb">next</span><span class="p">]:</span>
+                <span class="n">cost_so_far</span><span class="p">[</span><span class="nb">next</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_cost</span>
+                <span class="n">priority</span> <span class="o">=</span> <span class="n">new_cost</span> <span class="o">+</span> <span class="n">heuristic</span><span class="p">(</span><span class="nb">next</span><span class="p">,</span> <span class="n">goal</span><span class="p">)</span>
+                <span class="n">frontier</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="nb">next</span><span class="p">,</span> <span class="n">priority</span><span class="p">)</span>
+                <span class="n">came_from</span><span class="p">[</span><span class="nb">next</span><span class="p">]</span> <span class="o">=</span> <span class="n">current</span>
+
+    <span class="k">return</span> <span class="n">came_from</span><span class="p">,</span> <span class="n">cost_so_far</span>
+</code></pre></div>
+<h4 id="211-tips">2.1.1 Tips<a class="headerlink" href="#211-tips" title="Permanent link">&para;</a></h4>
+<p>有一步需要用 passable 函数过滤掉那些不应该成为下一步的位置（超出边界或者属于障碍物）.<br />
+我把 <code>in_bounds</code> 和 <code>passable</code> 合并了，但是要注意 <code>return</code> 后面表达式<strong>先后位置</strong>. <code>and</code> 有短路现象，先判断第一个，如果为 False, 就不会计算第二个表达式了.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">passable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="nb">id</span>
+    <span class="k">return</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">maps</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>另外 jupyter notebook 里面实际操作起来有点不一样… 还是会报错不知道为啥</p>
+</blockquote>
+<p>进一步其实这样写更简单, 节省了两个变量</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">passable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="nb">id</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">maps</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div>
+<h3 id="22-a">2.2 对图片矩阵使用 A*算法<a class="headerlink" href="#22-a" title="Permanent link">&para;</a></h3>
+<p>一个二值化的图像 (0 表示障碍物，1 表示可以通行）, 指定起止像素坐标寻路.<br />
+和原始实现基本相同，只不过把一些地方的数据类型改成了 numpy 的数组，而非字典/列表.</p>
+<p>比如<code>came_from</code>存储某个结点的上一个结点，之前字典是类似 <code>{(x,y): (i,j)}</code>, 要改成 numpy 的话，就是让一个二维数组存储的元素类型为元组. <code>np.ndarray((2, 3), dtype=tuple)</code></p>
+<blockquote>
+<p>但是这里实际上获得的矩阵中，<code>dtype=object</code>, 任何对象都可以存.</p>
+</blockquote>
+<p>更进一步，<code>np.ndarray((2, 3), dtype=np.dtype("2i"))</code> 的含义是，存储的元素是 <code>(2,)</code> 形状的 array, 数据类型是 <code>i</code> 整数.<br />
+其实获得的是 <code>shape=(2,3,2)</code> 的 array.</p>
+<blockquote>
+<p>我感觉第二种效率更高，但是由于算法中要求没有访问过的结点其 <code>came_from</code> 对应是 None, 就选了第一种方法</p>
+</blockquote>
+<p><code>cost_so_far</code> 要求创建带默认值的矩阵/字典（作者有具体解释）</p>
+<blockquote>
+<dl>
+<dt><code>numpy.full[shape, fill_value, dtype=None, order='C', *, like=None](source)</code></dt>
+<dd>Return a new array of given shape and type, filled with fill_value.</dd>
+</dl>
+</blockquote>
+<h3 id="23-troubleshooting">2.3 Troubleshooting<a class="headerlink" href="#23-troubleshooting" title="Permanent link">&para;</a></h3>
+<p>如果没有找到（不存在）路径，队列为空函数返回. 可以命令行打印一个 success 表示函数是从 break 退出的.</p>
+<h2 id="3">3 代码实现（旧）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>不是特别熟悉，有网上搜集到的别人的程序 <a href="https://medium.com/@nicholas.w.swift/easy-a-star-pathfinding-7e6689c7f7b2">medium.com</a><br />
+（似乎实现的不是很高明，但也可以用，有时候会花费很久时间还寻路失败）, 下面有一段使用代码</p>
+<blockquote>
+<p>我好像把源代码稍微改了改，也可能没改，总之这里使用 ndarray 作为交互数据结构，输出的路径本来是列表，转化为 ndarray<br />
+这个也是找到的一个实现，没有试 <a href="https://github.com/zhijs/8puzzle">zhijs/8puzzle: 基于 Python 八数码问题算法（深广度算法，A 星算法）</a></p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyastar</span> <span class="kn">import</span> <span class="n">a_star</span>
+<span class="c1">## start,end=np.array([440, 50]),np.array([440, 130])</span>
+<span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="n">targets</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span><span class="n">targets</span><span class="p">[</span><span class="mi">3</span><span class="p">,:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">maze</span><span class="p">[</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">maze</span><span class="p">[</span><span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="n">a_star</span><span class="p">(</span><span class="n">maze</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">)</span>
+<span class="n">path</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="4">4 关于路径长度的讨论<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>这里预设存储路径的是一个 nx2 矩阵，从起点到终点的坐标.</p>
+<p>单向路径<br />
+上一个点减去下一个点，所以需要错一位取矩阵相减.<br />
+<code>np.linalg.norm</code> 求模长（大概）, 之后<code>np.sum</code>求和</p>
+<div class="highlight"><pre><span></span><code><span class="n">diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">path</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">path</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>  <span class="c1"># 先获得相邻的差</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">diff</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+<blockquote>
+<p>特别注意的是，对于 A star 算法，如果只有上下左右四个方向，每走一步 cost 都是 1, 那么只需要 <code>len(path)-1</code></p>
+</blockquote>
+<p>环形路径</p>
+<div class="highlight"><pre><span></span><code><span class="n">diff</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">overall_path</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">roll</span><span class="p">(</span><span class="n">overall_path</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># 先获得相邻的差</span>
+<span class="n">path_lenghth</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="c1"># 闭合路径</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">path_lenghth</span><span class="p">,</span><span class="s2">&quot;km&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: README" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              README
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="SOM.html" class="md-footer__link md-footer__link--next" aria-label="Next: SOM" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              SOM
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

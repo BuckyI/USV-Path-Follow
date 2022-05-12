@@ -1,0 +1,2227 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>代码设计 - ProjectDocument</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="ProjectDocument" class="md-header__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ProjectDocument
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              代码设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="ProjectDocument" class="md-nav__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ProjectDocument
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        README
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. 原理&概念
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. 原理&概念" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 原理&概念
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/Astar.html" class="md-nav__link">
+        A STAR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/SOM.html" class="md-nav__link">
+        SOM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E6%97%A0%E4%BA%BA%E8%89%87.html" class="md-nav__link">
+        无人艇
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E6%B5%B7%E6%B5%AA.html" class="md-nav__link">
+        海浪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA.html" class="md-nav__link">
+        路径跟踪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/index.html">自抗扰控制</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="自抗扰控制" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          自抗扰控制
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%80%A6%E5%90%88%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        耦合系统控制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8%20%E6%9C%B1%E6%96%8C.html" class="md-nav__link">
+        自抗扰控制入门 朱斌
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0.html" class="md-nav__link">
+        自抗扰控制原理笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/index.html">视频笔记</a>
+          
+            <label for="__nav_2_6_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="视频笔记" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          视频笔记
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/ADRC%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        ADRC 设计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20%E5%8E%9F%E7%90%86%26%E6%A6%82%E5%BF%B5/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E8%96%9B%E6%96%87%E8%B6%85%20%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        薛文超 自抗扰控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. 代码设计
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 代码设计" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 代码设计
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%B6%E4%BB%96.html" class="md-nav__link">
+        其他
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html">1. 路径规划</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="1. 路径规划" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 路径规划
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          代码设计
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="code.html" class="md-nav__link md-nav__link--active">
+        代码设计
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 构建地图
+  </a>
+  
+    <nav class="md-nav" aria-label="1 构建地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 处理地图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 生成目标点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 分配任务点
+  </a>
+  
+    <nav class="md-nav" aria-label="2 分配任务点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 构建邻接矩阵
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 谱聚类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 路径规划
+  </a>
+  
+    <nav class="md-nav" aria-label="3 路径规划">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-som" class="md-nav__link">
+    3.1 关于 SOM
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 关于 SOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311" class="md-nav__link">
+    3.1.1 一些说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312" class="md-nav__link">
+    3.1.2 程序结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313" class="md-nav__link">
+    3.1.3 单线拓扑结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314" class="md-nav__link">
+    3.1.4 障碍检测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315" class="md-nav__link">
+    3.1.5 窗口更新
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316" class="md-nav__link">
+    3.1.6 缺陷
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-import" class="md-nav__link">
+    3.2 Import &amp; 工具
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-som" class="md-nav__link">
+    3.3 SOM 根据聚类结果进行路径规划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 路线平滑处理
+  </a>
+  
+    <nav class="md-nav" aria-label="4 路线平滑处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-b-spline" class="md-nav__link">
+    4.1 B-spline 算法
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 B-spline 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    4.1.1 在这里进行一定的改进
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 平滑路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 最终结果输出
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          2. 无人艇、路径跟踪
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 无人艇、路径跟踪" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 无人艇、路径跟踪
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/MATLAB.html" class="md-nav__link">
+        MATLAB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Unity3D.html" class="md-nav__link">
+        Unity3D
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/%E6%A8%A1%E5%9E%8B%E7%BC%96%E5%86%99.html" class="md-nav__link">
+        模型编写
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/index.html">Scene</a>
+          
+            <label for="__nav_3_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Scene" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Scene
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_2" type="checkbox" id="__nav_3_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Ceto/index.html">Ceto</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Ceto" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ceto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_3" type="checkbox" id="__nav_3_3_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4_3">
+          Terrain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Terrain" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Terrain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Terrain/%E5%9C%B0%E5%9B%BE%E7%94%9F%E6%88%90.html" class="md-nav__link">
+        地图生成
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../3.%20Archived/index.html">3. Archived</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="3. Archived" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3. Archived
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Archived/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BB%BC%E8%BF%B0.html" class="md-nav__link">
+        文献阅读与综述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          开题报告
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="开题报告" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          开题报告
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Archived/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.html" class="md-nav__link">
+        开题报告
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          文献翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="文献翻译" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          文献翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Archived/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91.html" class="md-nav__link">
+        在快速变化的干扰下，全动式自主潜水器的路径跟踪控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 构建地图
+  </a>
+  
+    <nav class="md-nav" aria-label="1 构建地图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 处理地图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2 生成目标点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 分配任务点
+  </a>
+  
+    <nav class="md-nav" aria-label="2 分配任务点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 构建邻接矩阵
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 谱聚类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 路径规划
+  </a>
+  
+    <nav class="md-nav" aria-label="3 路径规划">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-som" class="md-nav__link">
+    3.1 关于 SOM
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 关于 SOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311" class="md-nav__link">
+    3.1.1 一些说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312" class="md-nav__link">
+    3.1.2 程序结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313" class="md-nav__link">
+    3.1.3 单线拓扑结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#314" class="md-nav__link">
+    3.1.4 障碍检测
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#315" class="md-nav__link">
+    3.1.5 窗口更新
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#316" class="md-nav__link">
+    3.1.6 缺陷
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-import" class="md-nav__link">
+    3.2 Import &amp; 工具
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-som" class="md-nav__link">
+    3.3 SOM 根据聚类结果进行路径规划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4 存档点
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 路线平滑处理
+  </a>
+  
+    <nav class="md-nav" aria-label="4 路线平滑处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-b-spline" class="md-nav__link">
+    4.1 B-spline 算法
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 B-spline 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    4.1.1 在这里进行一定的改进
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    4.2 平滑路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 最终结果输出
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="_1">代码设计<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<ol>
+<li>构建地图: 获得障碍物信息，生成目标点(随机数)</li>
+<li>聚类算法任务分配<br />
+    使用 A* 算法(或者任意一个从A&rarr;B规划路径的算法) 构建目标点的全连接图, 并用谱聚类实现任务分配</li>
+<li>寻路算法获取 A&rarr;B 路径<br />
+    SOM 算法</li>
+<li>样条法平滑路径</li>
+<li>(无人艇运动控制系统)</li>
+</ol>
+<h2 id="1">1 构建地图<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><a href="https://scikit-image.org/">scikit-image: Image processing in Python — scikit-image</a><br />
+<a href="https://cloud.tencent.com/developer/doc/1221">Scikit image 中文开发手册 - 开发者手册 - 云 + 社区 - 腾讯云</a></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">transform</span><span class="p">,</span> <span class="n">morphology</span>
+
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span> <span class="s1">&#39;svg&#39;</span>
+</code></pre></div>
+<h3 id="11">1.1 处理地图<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 导入图片 original map</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;../Assets/Resources/Environment/890c.png&quot;</span><span class="p">)</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">omg</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 图片翻转</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">transform</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">omg</span><span class="p">,</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">))</span> <span class="c1"># 大小</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">omg</span><span class="p">)</span>
+</code></pre></div>
+<pre><code>&lt;matplotlib.image.AxesImage at 0x2dea3915f10&gt;
+</code></pre>
+<p><img alt="svg" src="output_4_1.svg" /></p>
+<p>关于<strong>坐标</strong>：</p>
+<ul>
+<li>图片矩阵是先 y 后 x, 对于坐标<code>(x,y)</code>, 对应 <code>img[y, x]</code>.<ul>
+<li>访问图片坐标时倒过来就好, 其他正常.</li>
+<li>如果这一点不习惯的话，对于二维矩阵可以转置后再查找 <code>img[y, x] == img.T[x, y]</code><br />
+    高维矩阵可以交换维度。</li>
+</ul>
+</li>
+<li>图片矩阵原点是图片的<strong>左上角</strong>，而一般习惯平面坐标系<strong>左下角</strong>是原点.<ul>
+<li>所以显示图片的时候, imshow 的结果默认是左上角原点, 如果要按照习惯设左下角为原点，需要设置坐标轴(不过图片显示会颠倒).</li>
+<li>注意这里横坐标范围是 <code>img.shape[1]</code>, 原因同上.</li>
+<li>有一种解决方式就是把 img 的 y 坐标(第一维度)上下翻转. 即 <code>img=np.flip(img,0)</code>. 则等效为图片坐标原点转化为<strong>左下角</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># 转换为灰度图并二值化 (这里选的是另一个更方便的图)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;../Assets/Resources/Environment/map_original.png&quot;</span><span class="p">)</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb2gray</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">transform</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">))</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">img</span> <span class="o">&lt;</span> <span class="mf">0.44</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 图片翻转, 图片坐标原点转换到左下角</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">morphology</span><span class="o">.</span><span class="n">binary_closing</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  <span class="c1"># 消除小黑点</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">morphology</span><span class="o">.</span><span class="n">binary_opening</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">)))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  <span class="c1"># 得到一个 500x500 大小的地图</span>
+</code></pre></div>
+<pre><code>&lt;matplotlib.image.AxesImage at 0x2dea39487c0&gt;
+</code></pre>
+<p><img alt="svg" src="output_6_1.svg" /></p>
+<p>获取<strong>障碍物</strong>信息：</p>
+<ul>
+<li>方法1: 输入一张地图图片，转化为灰度图像，设置合理阈值二值化处理，导出 0, 1 矩阵. (0 表示不可通行. 1 表示可通行.)</li>
+<li>方法2: 下载高程图, 截取需要的地方</li>
+</ul>
+<p>地图大小 500x500; 0表示不可通行, 1表示可以</p>
+<blockquote>
+<p>用于改进的 tips: 开闭运算消除细小区域; 腐蚀操作扩大障碍区域判定范围</p>
+</blockquote>
+<h3 id="12">1.2 生成目标点<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>随机数生成</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">obstacle</span> <span class="o">=</span> <span class="n">morphology</span><span class="o">.</span><span class="n">binary_erosion</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)))</span>  <span class="c1"># 扩大障碍物判定范围</span>
+<span class="n">target</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">target</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">499</span><span class="p">),</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">499</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">obstacle</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]]:</span>
+        <span class="n">target</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>  <span class="c1"># 最后转变为 ndarray</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#6495ED&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+</code></pre></div>
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x2dec5422f40&gt;
+</code></pre>
+<p><img alt="svg" src="output_9_1.svg" /></p>
+<h3 id="13">1.3 存档点<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>输入: 图片 img.png</li>
+<li>输出:<ul>
+<li>ndarray img 障碍物信息</li>
+<li>ndarray target 目标点信息</li>
+</ul>
+</li>
+</ul>
+<p>通用代码</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># 数据保存在 assets 下面</span>
+
+<span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;data&quot;</span><span class="p">):</span>
+    <span class="n">time_str</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">%H%M%S&quot;</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">time_str</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">.pickle&quot;</span>
+    <span class="n">filepath</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;assets/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;save </span><span class="si">{}</span><span class="s2"> to </span><span class="se">\&quot;</span><span class="si">{}</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var</span><span class="p">),</span> <span class="n">filepath</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;assets/</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+</code></pre></div>
+<p>保存到文件</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># save(target, &quot;targets&quot;)</span>
+<span class="c1"># save(img, &quot;map&quot;)</span>
+<span class="c1"># save(omg, &quot;original_map&quot;)</span>
+</code></pre></div>
+<p>从文件读取</p>
+<div class="highlight"><pre><span></span><code><span class="n">target</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423164508 targets.pickle&quot;</span><span class="p">)</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423164508 map.pickle&quot;</span><span class="p">)</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423171747 original_map.pickle&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">),</span> <span class="n">plt</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#6495ED&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+</code></pre></div>
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x2dec5496520&gt;
+</code></pre>
+<p><img alt="svg" src="output_16_1.svg" /></p>
+<h2 id="2">2 分配任务点<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>这里的思路是用A星在500x500的网格中进行路径规划, 获得路径长度作为邻接矩阵对应位置的权重.</p>
+<p><img alt="" src="illustrate/construct_graph.svg" /></p>
+<p>然后在此图基础上进行聚类.</p>
+<p><strong>步骤</strong>:</p>
+<ol>
+<li>输入 n 个数据</li>
+<li>计算 n 个数据两两之间的距离，对自己的距离是 0</li>
+<li>高斯函数将距离映射到 0-1 区间内的相似度, 对自己相似度是 1</li>
+<li>计算获得的数据组成了 nxn 的一个沿对角线对称的矩阵</li>
+</ol>
+<p>n个目标点就要算 <span class="arithmatex">\(1+2+…+n\)</span> 个, 计算量比较大.</p>
+<blockquote>
+<p>其实可以用一些更快的方法, 不需要获得精确的距离, 只需要获得的距离之间大致的大小关系就好了.<br />
+或者可以保存下来路径, 后续基于这个图, 用其他方法进行目标点排序, 排完再把路径拼起来</p>
+</blockquote>
+<h3 id="21">2.1 构建邻接矩阵<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>距离是按照<strong>像素数目</strong>计算的.</p>
+<p><strong>WARNING</strong>: 计算时间比较久</p>
+<ul>
+<li>20 个目标点会计算 3min</li>
+<li>30 个目标点会计算 4-5min</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">assets.astar</span> <span class="kn">import</span> <span class="n">GridWithWeights</span><span class="p">,</span> <span class="n">a_star_search</span><span class="p">,</span> <span class="n">reconstruct_path</span>
+
+<span class="n">target_list</span> <span class="o">=</span> <span class="p">[(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">target</span><span class="p">]</span>
+<span class="n">graph</span> <span class="o">=</span> <span class="n">GridWithWeights</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">get_distance</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A*算法获得两点之间距离&quot;&quot;&quot;</span>
+    <span class="n">came_from</span><span class="p">,</span> <span class="n">cost_so_far</span> <span class="o">=</span> <span class="n">a_star_search</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">)</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">reconstruct_path</span><span class="p">(</span><span class="n">came_from</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">get_distance_matrix</span><span class="p">(</span><span class="n">targets</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;targets: list of coordinates (ndarray)&quot;&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">targets</span><span class="p">)</span>
+    <span class="n">adj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="c1"># 距离自己距离0</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">p1</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">targets</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">p2</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">targets</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]):</span>
+            <span class="c1"># 计算 P1,P2 之间的距离</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">get_distance</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span>
+            <span class="c1"># 矩阵对应位置赋值</span>
+            <span class="n">adj</span><span class="p">[[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">distance</span>
+    <span class="k">return</span> <span class="n">adj</span>
+
+<span class="n">adj</span><span class="o">=</span><span class="n">get_distance_matrix</span><span class="p">(</span><span class="n">target_list</span><span class="p">)</span> <span class="c1"># 距离矩阵 (adjacency matrix?)</span>
+</code></pre></div>
+<p>调参确定 gamma<br />
+可以通过画图的方法确定比较合理的参数.<br />
+gamma 越小, 数据越靠近1; gamma 越大, 数据越靠近 0; 理想情况是 0-1 之间近似均匀分布.</p>
+<div class="highlight"><pre><span></span><code><span class="n">gamma</span> <span class="o">=</span> <span class="mf">5e-6</span>
+<span class="n">affinity_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">adj</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">affinity_matrix</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">!=</span> <span class="mf">1.0</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="svg" src="output_21_0.svg" /></p>
+<h3 id="22">2.2 谱聚类<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p>关于<strong>聚类数</strong>的确定:<br />
+有一种方法是计算不同 n 时代价函数，并画图.<br />
+有可能有一个拐点，前后斜率变化较大.</p>
+<p>谱聚类的代价函数是切开的线的权值之和</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># from sklearn.cluster import KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">SpectralClustering</span>
+
+<span class="c1"># 前面算好 affinity_matrix</span>
+<span class="n">cluster_number</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">sc</span> <span class="o">=</span> <span class="n">SpectralClustering</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">cluster_number</span><span class="p">,</span> <span class="n">affinity</span><span class="o">=</span><span class="s1">&#39;precomputed&#39;</span><span class="p">)</span>
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">affinity_matrix</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">omg</span><span class="p">)</span>
+<span class="c1">#plt.scatter(target[:, 0], target[:, 1], color=&quot;#6495ED&quot;, s=6)  # 画上目标点</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">c</span><span class="o">=</span><span class="n">cluster</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+            <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab10&quot;</span><span class="p">)</span>  <span class="c1"># 画上目标点</span>
+</code></pre></div>
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x2dec7d496a0&gt;
+</code></pre>
+<p><img alt="svg" src="output_23_1.svg" /></p>
+<h3 id="23">2.3 存档点<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p>保存数据</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># readme = &quot;&quot;&quot;</span>
+<span class="c1"># img: 20220423164508 map.pickle</span>
+<span class="c1"># omg: 20220423171747 original_map.pickle</span>
+<span class="c1"># target: 20 个目标点 ndarry 20220423164508 targets.pickle</span>
+<span class="c1"># cluster: 3 个聚类结果</span>
+<span class="c1"># affinity_matrix: 邻接矩阵</span>
+<span class="c1"># &quot;&quot;&quot;</span>
+
+<span class="c1"># MAP = {</span>
+<span class="c1">#     &quot;omg&quot;: omg,  # 底图</span>
+<span class="c1">#     &quot;img&quot;: img,  # 二值化后障碍信息</span>
+<span class="c1">#     &quot;target&quot;: target,  # 目标点</span>
+<span class="c1">#     &quot;cluster&quot;: cluster,  # 目标点聚类结果(聚类数自己看)</span>
+<span class="c1">#     &quot;affinity_matrix&quot;: affinity_matrix,  # 邻接矩阵, 以免想要重新聚类</span>
+<span class="c1">#     &quot;readme&quot;: readme</span>
+<span class="c1"># }</span>
+
+<span class="c1"># save(MAP,&quot;MAP&quot;)</span>
+</code></pre></div>
+<p>读取数据</p>
+<div class="highlight"><pre><span></span><code><span class="n">MAP</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423172802 MAP.pickle&quot;</span><span class="p">)</span>
+<span class="c1"># MAP = load(&quot;MAP 20220212162020.pickle&quot;)</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;omg&quot;</span><span class="p">]</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;img&quot;</span><span class="p">]</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;cluster&quot;</span><span class="p">]</span>
+</code></pre></div>
+<h2 id="3">3 路径规划<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31-som">3.1 关于 SOM<a class="headerlink" href="#31-som" title="Permanent link">&para;</a></h3>
+<h4 id="311">3.1.1 一些说明<a class="headerlink" href="#311" title="Permanent link">&para;</a></h4>
+<p><code>som.py</code> 实现了基于SOM的避障算法.最初的最初, 来自<a href="https://github.com/diego-vicente/ntnu-som">diego-vicente/ntnu-som: Using Self-Organizing Maps for Travelling Salesman Problem</a><br />
+面向对象实现.</p>
+<p><strong>归一化</strong>:<br />
+一般用于 SOM 聚类应该需要各维度(特征)各自归一化，<br />
+但是如果两个维度分别是 x,y 坐标的话，应该同比例缩放，不然会影响距离的计算.<br />
+其实我觉得不归一化也可以, 只不过是坐标数值大小不一样</p>
+<p><strong>初始化</strong>:<br />
+本代码中, 初始结点随机分布在 target 坐标重心小范围附近.</p>
+<p>一般神经网络权重设置为<strong>标准化</strong>小型随机值。<br />
+(也可以随机分布在地图内)<br />
+其实测试后结果差别不大. 原因大概是刚开始学习率很高，不管怎样都会震荡到全局.</p>
+<ul>
+<li><code>self.network = np.random.rand(self.node_number, 2) * targets.max()</code></li>
+<li><code>self.network = np.random.rand(self.node_number, 2)</code></li>
+</ul>
+<h4 id="312">3.1.2 程序结构<a class="headerlink" href="#312" title="Permanent link">&para;</a></h4>
+<p>使用SOM解决TSP问题的<strong>核心结构</strong>: (不一定能运行)</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">class</span> <span class="nc">Network</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">targets</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">targets</span> <span class="o">=</span> <span class="n">targets</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">node_number</span> <span class="o">=</span> <span class="n">targets</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">15</span> <span class="c1"># 神经元结点数目是目标点数的 15 倍</span>
+
+        <span class="c1"># 初始化生成神经网络</span>
+        <span class="c1"># 将坐标缩放到与任务点坐标相同范围</span>
+        <span class="c1"># 正常情况下是对 TARGETS 进行归一化操作，这里是特殊情况</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">network</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">node_number</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">targets</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> 
+        <span class="c1"># 用在邻域函数里面的邻域半径</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">node_number</span>  
+        <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.8</span> <span class="c1"># 初始学习率设为 0.8</span>
+
+    <span class="k">def</span> <span class="nf">training</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span> <span class="c1"># 循环更新</span>
+
+            <span class="n">target</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">targets</span><span class="p">)</span> <span class="c1"># 随机选择一个目标</span>
+            <span class="n">winner_idx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">select_closest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">network</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span> <span class="c1"># 竞争，得到获胜节点</span>
+
+            <span class="c1"># 更新获胜节点及其邻域</span>
+            <span class="n">gaussian</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neighborhood</span><span class="p">(</span><span class="n">winner_idx</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+            <span class="n">target_delta</span> <span class="o">=</span> <span class="n">gaussian</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">target</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">network</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">network</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="n">target_delta</span>
+
+            <span class="c1"># 更新学习率，缩小邻域</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span> <span class="o">*=</span> <span class="mf">0.99997</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">*=</span> <span class="mf">0.9997</span>
+
+            <span class="c1"># 终止判断</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">learning_rate</span> <span class="o">&lt;</span> <span class="mf">0.001</span><span class="p">:</span>
+                <span class="k">break</span>
+
+    <span class="k">def</span> <span class="nf">select_closest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">candidates</span><span class="p">,</span> <span class="n">origin</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        检索 array 中最小值的位置，并返回其下标值，即找到最相似 neuron</span>
+<span class="sd">        Return the index of the closest candidate to a given point.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">euclidean_distance</span><span class="p">(</span><span class="n">candidates</span><span class="p">,</span> <span class="n">origin</span><span class="p">)</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">euclidean_distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        求 a-b 每一行的算数平方和开根号，也就是行向量之间的欧几里德距离了。</span>
+<span class="sd">        Return the array of distances of two numpy arrays of points.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_neighborhood</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radix</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the range gaussian of given radix around a center index.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">radix</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># Impose an upper bound on the radix to prevent NaN and blocks</span>
+            <span class="n">radix</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="c1">## Compute the circular network distance to the center</span>
+        <span class="n">deltas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="n">center</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">node_number</span><span class="p">))</span>
+        <span class="n">distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">deltas</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">node_number</span> <span class="o">-</span> <span class="n">deltas</span><span class="p">)</span>
+
+        <span class="c1">## Compute Gaussian distribution around the given center</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">distances</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">radix</span> <span class="o">**</span> <span class="mi">2</span><span class="p">))</span>
+</code></pre></div>
+<h4 id="313">3.1.3 单线拓扑结构<a class="headerlink" href="#313" title="Permanent link">&para;</a></h4>
+<p>思路比较简单，就是拓扑结构从环状断开，其实还简化了一点.</p>
+<p><strong>逻辑上</strong>需要设置一个起点终点，不然得到的起点和终点是随机的. 可以根据实际需要进行设定.</p>
+<p><strong>设定起点终点</strong>:</p>
+<ul>
+<li>方法1: 每轮迭代强制设定 SOM 路径起点终点为对应位置即可.<br />
+    虽然起点和终点并不作为目标点参与更新，但是通过引入的窗口机制(使结点均匀分布)，仍然可以保证其临近的结点向其靠近.</li>
+<li>方法2: 每轮额外让拓扑结构的起点/终点朝向设定的起点/终点更新</li>
+</ul>
+<h4 id="314">3.1.4 障碍检测<a class="headerlink" href="#314" title="Permanent link">&para;</a></h4>
+<p>只对SOM结点的位置进行判断, 这样不严谨, 但判断<strong>两点之间线段</strong>是否与障碍物相交比较困难, 计算量也比较大.<br />
+可以通过添加结点数目弥补(计算量++).</p>
+<h4 id="315">3.1.5 窗口更新<a class="headerlink" href="#315" title="Permanent link">&para;</a></h4>
+<p>在这里实现的窗口更新可以理解为是一个比较激进的"滤波", 让结点平均分布并且躲开障碍物.<br />
+但是会很大程度上削弱原本算法让路径到达目标点的作用. "滤波"作用太强导致无法到达目标结点</p>
+<p><img alt="" src="illustrate/removewinners.svg" /></p>
+<p>胜者不变就是那些最接近各自目标点的结点不移动位置，带来的坏处就是结点分布不太均匀.</p>
+<table>
+<thead>
+<tr>
+<th>没有胜者不变</th>
+<th>有胜者不变</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="illustrate/removewinners2.svg" /></td>
+<td><img alt="" src="illustrate/removewinners3.svg" /></td>
+</tr>
+<tr>
+<td>节点分布非常均匀, 但是"滤波"作用太强导致无法到达目标结点</td>
+<td>通过固定最接近目标点结点的策略, 保证到达目标节点, 但是同时节点分布变得不均匀</td>
+</tr>
+</tbody>
+</table>
+<h4 id="316">3.1.6 缺陷<a class="headerlink" href="#316" title="Permanent link">&para;</a></h4>
+<p>SOM 模型比较简单, 存储的数据量少(只有结点的数据), 所以对于更新算法的设计要求更高.<br />
+SOM 的更新: 根据目标点选择最近的结点作为获胜节点, 获胜节点与相邻的结点一起靠近目标点.</p>
+<ol>
+<li>选取获胜节点时，仅依靠欧氏距离并没有考虑障碍信息. 也许可以通过路径规划算法找到那个真正靠近目标点的获胜节点, 但计算量会更大, 因为要判断目标点和所有结点的实际距离.<ul>
+<li>一个可能的思路: 使用多个 A* 同时搜索, 先从一个最有可能靠近目标点的结点开始搜索，规划出路径后记录一下长度，然后看下一个结点，寻路过程中一旦代价超过这个长度的部分就直接舍弃掉，以此类推.</li>
+</ul>
+</li>
+<li>更新规则方面, 更新算法是直线往前走, 如果有障碍物的话，按理说是沿着各自往目标点路径去走的路线更新. 计算量确实会很大（大概）<ul>
+<li>也许可以用一些局部路径规划的方法, 沿着规划出的结果走一段（也许实际上是还可以接受）（但是这样算法就有点缝合怪）<ul>
+<li>✨实际上如果节点的更新都是沿着避障的路径走一段, 可能效果就还不错, 并且不需要借助这里的窗口更新来避障了(只需要让结点均匀分布来保证每段的规划精度)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>窗口更新, 现在看来是一个简单的对一条线进行搜索, 并把结点放置在搜索结果上, (在当时写时是以一个"更新"的想法, 从原来的位置上下移动)<ul>
+<li>如果把窗口更新范围扩大, 对更新算法进行改进, 可能就还是需要借助其他路径规划算法辅助更新.</li>
+<li>如果把窗口范围更新到目标点之间… 那么其实可以把SOM换成遗传算法</li>
+</ul>
+</li>
+</ol>
+<p>anyway… 如果要改进的话, 算法设计需要参考、结合一些成熟的算法… 但因此可能说明, 当前这个思路不具有优势.</p>
+<h3 id="32-import">3.2 Import &amp; 工具<a class="headerlink" href="#32-import" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">assets.som</span> <span class="kn">import</span> <span class="n">Network</span>
+
+<span class="k">def</span> <span class="nf">plot_path</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">network</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;画路线图&quot;&quot;&quot;</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">axis</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+    <span class="n">axis</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">axis</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+    <span class="n">axis</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  <span class="c1"># 画地图</span>
+
+    <span class="n">axis</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">targets</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">targets</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span>
+                 <span class="n">c</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>  <span class="c1"># 画任务点</span>
+    <span class="n">axis</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">network</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">network</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>  <span class="c1"># 画路线</span>
+    <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">axis</span>
+
+
+<span class="k">def</span> <span class="nf">get_start_end</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;单线 SOM 的话, 确定起点和终点</span>
+<span class="sd">    (maximum - minimum) along an axis.&quot;&quot;&quot;</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">ptp</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">()</span>  <span class="c1"># 获得相距最远的轴 (x or y)</span>
+    <span class="n">start_index</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="n">index</span><span class="p">]</span>
+    <span class="n">end_index</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)[</span><span class="n">index</span><span class="p">]</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">start_index</span><span class="p">]</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">end_index</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span>
+</code></pre></div>
+<p>使用举例</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># start, end = get_start_end(target) # 确定起点和终点, 也可以随便指定</span>
+<span class="c1"># net = Network(target, img, start, end) # set up network (targets, maze, start, end)</span>
+<span class="c1"># net.training()</span>
+<span class="c1"># path_lenghth = net.route_distance() # 获取长度</span>
+<span class="c1"># print(path_lenghth, &quot;km&quot;)</span>
+<span class="c1"># plot_path(omg, target, net.network) # 画路线</span>
+<span class="c1"># plt.scatter(start[0], start[1], marker=&#39;o&#39;, c=&quot;r&quot;, s=5)  # 画起点</span>
+<span class="c1"># plt.scatter(end[0], end[1], marker=&#39;o&#39;, c=&quot;r&quot;, s=5)  # 画终点</span>
+</code></pre></div>
+<h3 id="33-som">3.3 SOM 根据聚类结果进行路径规划<a class="headerlink" href="#33-som" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 分配结果 cluster</span>
+<span class="n">distances</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># 路径长度</span>
+<span class="n">routes</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># 规划出的路径</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cluster</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">subt</span> <span class="o">=</span> <span class="n">target</span><span class="p">[</span><span class="n">cluster</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span> <span class="c1"># 目标点子集</span>
+    <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="n">get_start_end</span><span class="p">(</span><span class="n">subt</span><span class="p">)</span>
+    <span class="n">net</span> <span class="o">=</span> <span class="n">Network</span><span class="p">(</span><span class="n">subt</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+    <span class="n">net</span><span class="o">.</span><span class="n">training</span><span class="p">()</span>
+    <span class="n">routes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">net</span><span class="o">.</span><span class="n">network</span><span class="p">)</span>
+    <span class="n">distances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">net</span><span class="o">.</span><span class="n">route_distance</span><span class="p">())</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">omg</span><span class="p">)</span>  <span class="c1"># 画地图</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">c</span><span class="o">=</span><span class="n">cluster</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+            <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab10&quot;</span><span class="p">)</span>  <span class="c1"># 画任务点</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">routes</span><span class="p">:</span>  <span class="c1"># 画路线</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">path</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">path</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="c1"># axis.scatter(path[:,0],path[:,1],s=1)</span>
+</code></pre></div>
+<p><img alt="svg" src="output_47_0.svg" /></p>
+<h3 id="34">3.4 存档点<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<p>保存数据</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># readme = &quot;&quot;&quot;</span>
+<span class="c1"># 20220423172802 MAP.pickle, 30 个目标点, 3组分类 (全部都是 numpy 矩阵)</span>
+<span class="c1"># &quot;&quot;&quot;</span>
+
+<span class="c1"># PATH = {</span>
+<span class="c1">#     &quot;routes&quot;: routes,  # list of paths array</span>
+<span class="c1">#     &quot;distances&quot;: distances,</span>
+<span class="c1">#     &quot;readme&quot;: readme</span>
+<span class="c1"># }</span>
+
+<span class="c1"># save(PATH, &quot;PATHS&quot;)</span>
+</code></pre></div>
+<p>读取数据</p>
+<div class="highlight"><pre><span></span><code><span class="n">PATH</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423175003 PATHS.pickle&quot;</span><span class="p">)</span>
+<span class="n">routes</span> <span class="o">=</span> <span class="n">PATH</span><span class="p">[</span><span class="s2">&quot;routes&quot;</span><span class="p">]</span>
+<span class="n">distances</span> <span class="o">=</span> <span class="n">PATH</span><span class="p">[</span><span class="s2">&quot;distances&quot;</span><span class="p">]</span>
+<span class="n">MAP</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s2">&quot;20220423172802 MAP.pickle&quot;</span><span class="p">)</span>
+<span class="n">omg</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;omg&quot;</span><span class="p">]</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;img&quot;</span><span class="p">]</span>
+<span class="n">target</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
+<span class="n">cluster</span> <span class="o">=</span> <span class="n">MAP</span><span class="p">[</span><span class="s2">&quot;cluster&quot;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">omg</span><span class="p">)</span>  <span class="c1"># 画地图</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">c</span><span class="o">=</span><span class="n">cluster</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+            <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab10&quot;</span><span class="p">)</span>  <span class="c1"># 画任务点</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">routes</span><span class="p">:</span>  <span class="c1"># 画路线</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">path</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">path</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
+    <span class="c1"># axis.scatter(path[:,0],path[:,1],s=1)</span>
+</code></pre></div>
+<p><img alt="svg" src="output_52_0.svg" /></p>
+<h2 id="4">4 路线平滑处理<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41-b-spline">4.1 B-spline 算法<a class="headerlink" href="#41-b-spline" title="Permanent link">&para;</a></h3>
+<p><code>scipy.interpolate.make_interp_spline(x, y, k=3, t=None, bc_type=None, axis=0, check_finite=True)</code></p>
+<ul>
+<li><code>x</code> 是横坐标，即自变量（大概需要是递增的），用于区分 y 的顺序.</li>
+<li><code>y</code> 是纵坐标， 也就是数据点（可以是高维的，但是行数得和 x 一样）</li>
+<li><code>k</code> 是 B-Spline 的阶数, 默认的 3 就可以了</li>
+<li><code>bc_type</code> :Boundary conditions. 可以设置为 <code>clamped</code> (The first derivatives at the ends are zero.)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">make_interp_spline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 极坐标图形</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span> <span class="c1"># 0~2pi</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>  <span class="c1"># convert to Cartesian coordinates</span>
+<span class="n">P</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="c1">#　按列合并x,y作为目标点</span>
+
+<span class="c1"># Build an interpolating curve, parameterizing it by the angle</span>
+<span class="n">spl</span> <span class="o">=</span> <span class="n">make_interp_spline</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+
+<span class="c1"># 用更细间距的自变量计算插值结果</span>
+<span class="n">phi_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">x_new</span><span class="p">,</span> <span class="n">y_new</span> <span class="o">=</span> <span class="n">spl</span><span class="p">(</span><span class="n">phi_new</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="c1"># 这里把 P_new 拆开</span>
+
+<span class="c1"># 绘图比较</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="svg" src="output_56_0.svg" /></p>
+<h4 id="411">4.1.1 在这里进行一定的改进<a class="headerlink" href="#411" title="Permanent link">&para;</a></h4>
+<ul>
+<li>原始路径 <span class="arithmatex">\(p_1,p_2,\dots,p_n\)</span> &rarr; 计算路径点之间的距离并累积, 然后归一化生成一个 0-1 的索引序列<ul>
+<li>最终结果是一个递增的数列, 表示了路径点所处位置路线长度的映射</li>
+<li>这样平滑函数可以输出等间距的数据点</li>
+</ul>
+</li>
+<li>初次平滑, 输出节点 <span class="arithmatex">\(k_1,k_2,\dots,k_m\)</span><ul>
+<li>特点是沿路径均匀分布(前提是之前SOM算法输出的结点很密, 导致这里平滑过后仍然很大程度上符合原来的路径)</li>
+<li>这里设置 m 要小一些, 相当于从原始路径点中等路径间距取样("降采样"). (这个步骤的目的)<ul>
+<li>m 某种程度上反映了对路径精确程度的要求, 如果等间距 10m 取样, 则说明 10m 以内的路径变化被忽略掉了</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>二次平滑, 使用 <span class="arithmatex">\(k_1,k_2,\dots,k_m\)</span> 进行平滑. m 越小路线越平滑.</li>
+</ul>
+<p><img alt="" src="illustrate/20220510.png" /></p>
+<h3 id="42">4.2 平滑路径<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">make_interp_spline</span>
+
+
+<span class="k">def</span> <span class="nf">bspline</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;考虑路径长度进行圆滑处理</span>
+<span class="sd">    默认输入路径 15m 一个路径点, 输出 0.7m 1个路径点</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">di_vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># 沿行一阶差分</span>
+    <span class="n">di_dis</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">di_vec</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 相邻路径点之间的欧氏距离</span>
+    <span class="n">di_dis</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">di_dis</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># 开头插入一个 0</span>
+    <span class="n">di_overall</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">di_dis</span><span class="p">)</span>  <span class="c1"># 路线总长度</span>
+    <span class="n">di_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">di_dis</span><span class="p">)</span> <span class="o">/</span> <span class="n">di_overall</span>  <span class="c1"># 先累积距离，再除以总长度，变成0-1的索引</span>
+
+    <span class="c1"># 初次平滑, 隔 precision(m) 输出一个路径点 &quot;降采样&quot;</span>
+    <span class="n">spl1</span> <span class="o">=</span> <span class="n">make_interp_spline</span><span class="p">(</span><span class="n">di_index</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">bc_type</span><span class="o">=</span><span class="s2">&quot;clamped&quot;</span><span class="p">)</span>
+    <span class="n">t1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">di_overall</span> <span class="o">//</span> <span class="n">precision</span><span class="p">))</span>
+    <span class="n">splined_routes1</span> <span class="o">=</span> <span class="n">spl1</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+
+    <span class="c1"># 二次平滑, 每隔 1m 输出一个路径点</span>
+    <span class="n">spl2</span> <span class="o">=</span> <span class="n">make_interp_spline</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">splined_routes1</span><span class="p">,</span> <span class="n">bc_type</span><span class="o">=</span><span class="s2">&quot;clamped&quot;</span><span class="p">)</span>
+    <span class="n">t2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">di_overall</span> <span class="o">//</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">splined_routes2</span> <span class="o">=</span> <span class="n">spl2</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">splined_routes2</span>
+
+
+<span class="c1"># # test code</span>
+<span class="c1"># path=routes[0]</span>
+<span class="c1"># distance=distances[0]</span>
+
+<span class="c1"># splined_routes = bspline(path)</span>
+<span class="c1"># plt.plot(path[:, 0], path[:, 1], &#39;-&#39;, alpha=0.25, c=&quot;gray&quot;,linewidth=3)</span>
+<span class="c1"># plt.plot(splined_routes[:, 0], splined_routes[:, 1], &#39;-&#39;,alpha=0.5)</span>
+<span class="c1"># plt.scatter(splined_routes[:, 0], splined_routes[:, 1],s=1, c=&quot;red&quot;)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">precision</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># 精度 20m</span>
+<span class="n">splined_routes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">routes</span><span class="p">:</span>
+    <span class="n">splined_routes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bspline</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">precision</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">omg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">omg</span><span class="p">)</span>
+<span class="c1"># plt.scatter(target[:, 0], target[:, 1], color=&quot;#6495ED&quot;, s=6)  # 画上目标点</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">target</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">target</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">c</span><span class="o">=</span><span class="n">cluster</span><span class="p">,</span>
+            <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+            <span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+            <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;tab10&quot;</span><span class="p">)</span>  <span class="c1"># 画上目标点</span>
+
+<span class="c1"># 绘图比较 灰色的是原始, 彩色的是平滑过后的</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">routes</span><span class="p">,</span> <span class="n">splined_routes</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">i</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">i</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">j</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">j</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="svg" src="output_60_0.svg" /></p>
+<h2 id="5">5 最终结果输出<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>输出一组 targets &amp; path</p>
+<p>matlab 沿 path.csv 仿真</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># splined_route = splined_routes[0]</span>
+<span class="c1"># plt.plot(splined_route[:, 0], splined_route[:, 1], &#39;-&#39;, linewidth=1)</span>
+<span class="c1"># st = target[cluster==0]</span>
+<span class="c1"># plt.scatter(st[:,0],st[:,1],marker=&quot;x&quot;)</span>
+
+<span class="c1"># for index, path in enumerate(splined_routes):</span>
+<span class="c1">#     np.savetxt(f&quot;path{index}.csv&quot;, path, delimiter=&#39;,&#39;, fmt=&#39;%.3f&#39;)</span>
+<span class="c1"># np.savetxt(&quot;all_targets.csv&quot;, target, delimiter=&#39;,&#39;, fmt=&#39;%.3f&#39;)</span>
+</code></pre></div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: README" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              README
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/MATLAB.html" class="md-footer__link md-footer__link--next" aria-label="Next: MATLAB" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              MATLAB
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

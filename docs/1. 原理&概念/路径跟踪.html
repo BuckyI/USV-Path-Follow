@@ -1,0 +1,1698 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>路径跟踪 - ProjectDocument</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="ProjectDocument" class="md-header__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ProjectDocument
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              路径跟踪
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="ProjectDocument" class="md-nav__button md-logo" aria-label="ProjectDocument" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ProjectDocument
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        README
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1. 原理&概念
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1. 原理&概念" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 原理&概念
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Astar.html" class="md-nav__link">
+        A STAR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SOM.html" class="md-nav__link">
+        SOM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%97%A0%E4%BA%BA%E8%89%87.html" class="md-nav__link">
+        无人艇
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%B5%B7%E6%B5%AA.html" class="md-nav__link">
+        海浪
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          路径跟踪
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA.html" class="md-nav__link md-nav__link--active">
+        路径跟踪
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 样条法
+  </a>
+  
+    <nav class="md-nav" aria-label="1 样条法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-spline" class="md-nav__link">
+    1.1 Spline 原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-spline" class="md-nav__link">
+    1.2 Spline 编程方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 路径跟踪方法
+  </a>
+  
+    <nav class="md-nav" aria-label="2 路径跟踪方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 最近会遇点法
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 最近会遇点法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1 值确定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2 角度计算方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3 角度(参考航向)突变问题
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3 角度(参考航向)突变问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2131" class="md-nav__link">
+    2.1.3.1 说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2132" class="md-nav__link">
+    2.1.3.2 解决方法
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3.2 解决方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21321" class="md-nav__link">
+    2.1.3.2.1 方法一: 角度限定范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21322" class="md-nav__link">
+    2.1.3.2.2 方法二: 角度不限定范围
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 视线导引法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 最后采用的方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/index.html">自抗扰控制</a>
+          
+            <label for="__nav_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="自抗扰控制" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          自抗扰控制
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%80%A6%E5%90%88%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        耦合系统控制
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8%20%E6%9C%B1%E6%96%8C.html" class="md-nav__link">
+        自抗扰控制入门 朱斌
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B0.html" class="md-nav__link">
+        自抗扰控制原理笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_5" type="checkbox" id="__nav_2_6_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/index.html">视频笔记</a>
+          
+            <label for="__nav_2_6_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="视频笔记" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          视频笔记
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/ADRC%E8%AE%BE%E8%AE%A1.html" class="md-nav__link">
+        ADRC 设计
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0/%E8%96%9B%E6%96%87%E8%B6%85%20%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6.html" class="md-nav__link">
+        薛文超 自抗扰控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          2. 代码设计
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 代码设计" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 代码设计
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/%E5%85%B6%E4%BB%96.html" class="md-nav__link">
+        其他
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/1.%20%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/index.html">1. 路径规划</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="1. 路径规划" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          1. 路径规划
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/1.%20%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/code.html" class="md-nav__link">
+        代码设计
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          2. 无人艇、路径跟踪
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="2. 无人艇、路径跟踪" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          2. 无人艇、路径跟踪
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/MATLAB.html" class="md-nav__link">
+        MATLAB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Unity3D.html" class="md-nav__link">
+        Unity3D
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/%E6%A8%A1%E5%9E%8B%E7%BC%96%E5%86%99.html" class="md-nav__link">
+        模型编写
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/index.html">Scene</a>
+          
+            <label for="__nav_3_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Scene" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Scene
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_2" type="checkbox" id="__nav_3_3_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Ceto/index.html">Ceto</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Ceto" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Ceto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4_3" type="checkbox" id="__nav_3_3_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4_3">
+          Terrain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Terrain" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Terrain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.%20%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1/2.%20%E6%97%A0%E4%BA%BA%E8%89%87%E3%80%81%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/Scene/Terrain/%E5%9C%B0%E5%9B%BE%E7%94%9F%E6%88%90.html" class="md-nav__link">
+        地图生成
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../3.%20Archived/index.html">3. Archived</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="3. Archived" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3. Archived
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E4%B8%8E%E7%BB%BC%E8%BF%B0.html" class="md-nav__link">
+        文献阅读与综述
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          开题报告
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="开题报告" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          开题报告
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A/%E5%BC%80%E9%A2%98%E6%8A%A5%E5%91%8A.html" class="md-nav__link">
+        开题报告
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          文献翻译
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="文献翻译" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          文献翻译
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.%20Archived/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91/%E6%96%87%E7%8C%AE%E7%BF%BB%E8%AF%91.html" class="md-nav__link">
+        在快速变化的干扰下，全动式自主潜水器的路径跟踪控制
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 样条法
+  </a>
+  
+    <nav class="md-nav" aria-label="1 样条法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-spline" class="md-nav__link">
+    1.1 Spline 原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-spline" class="md-nav__link">
+    1.2 Spline 编程方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 路径跟踪方法
+  </a>
+  
+    <nav class="md-nav" aria-label="2 路径跟踪方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1 最近会遇点法
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 最近会遇点法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    2.1.1 值确定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    2.1.2 角度计算方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    2.1.3 角度(参考航向)突变问题
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3 角度(参考航向)突变问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2131" class="md-nav__link">
+    2.1.3.1 说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2132" class="md-nav__link">
+    2.1.3.2 解决方法
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1.3.2 解决方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21321" class="md-nav__link">
+    2.1.3.2.1 方法一: 角度限定范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21322" class="md-nav__link">
+    2.1.3.2.2 方法二: 角度不限定范围
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    2.2 视线导引法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3 最后采用的方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="_1">路径跟踪<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>轨迹跟踪</strong>是考虑时间信息（即某时刻到达某点），而<strong>路径跟踪</strong>不用考虑时间信息, <strong>无人艇与路径上的最近距离，作为路径跟踪误差</strong>.</p>
+<ul>
+<li>样条法平滑路径</li>
+<li>最近会遇点法跟踪</li>
+</ul>
+<h2 id="1">1 样条法<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>样条函数（spline function）是某种意义上的分段函数（piecewise polynomial function）。<br />
+样条函数是由一些具有某些连续性条件得子空间上得分段多项式构成。给定 n+1 个点<span class="arithmatex">\(t_0,t_1,\cdots,t_n\)</span> 并满足<span class="arithmatex">\(t_0&lt;t_1&lt;\cdots&lt;t_n\)</span>, 这些点称为结点. 又假如指定整数<span class="arithmatex">\(k\ge0\)</span>, 具有结点<span class="arithmatex">\(t_0,t_1,\cdots,t_n\)</span> 的一个<span class="arithmatex">\(k\)</span>次样条函数是指满足下列条件的函数<span class="arithmatex">\(S\)</span>:</p>
+<ol>
+<li>在每个区间<span class="arithmatex">\([t_{i-1},t_i]\)</span>上，S 是一个次数<span class="arithmatex">\(\le k\)</span> 的多项式</li>
+<li>在<span class="arithmatex">\(t_0,t_n\)</span> 上 S 有<span class="arithmatex">\(k-1\)</span>阶连续导数</li>
+</ol>
+<h3 id="11-spline">1.1 Spline 原理<a class="headerlink" href="#11-spline" title="Permanent link">&para;</a></h3>
+<div class="admonition cite">
+<p class="admonition-title">其他参考资料</p>
+<p><a href="https://zhuanlan.zhihu.com/p/80756122">轨迹生成--三次样条插值 - 知乎</a><br />
+<a href="https://zhuanlan.zhihu.com/p/34825299">一文读懂回归样条（regression splines），附 Python 代码 - 知乎</a><br />
+<a href="https://blog.csdn.net/MTandHJ/article/details/101528966">样条函数_MTandHJ 的博客-CSDN 博客_样条函数</a><br />
+<a href="https://www.bilibili.com/video/BV1jS4y1K7qG?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click">改进A星算法（五）贝塞尔曲线平滑_哔哩哔哩_bilibili</a></p>
+</div>
+<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1Qz4y1m7dS?spm_id_from=333.337.search-card.all.click">路径规划与轨迹跟踪系列算法学习_第 8 讲_B 样条曲线法_哔哩哔哩_bilibili</a><br />
+视频中有对代码的详细讲解，见后半部分。</p>
+</blockquote>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-38-02.png" /><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-38-15.png" /><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-38-22.png" /></p>
+<p>结论：</p>
+<ol>
+<li>使用准 B 样条曲线可以让曲线初始末尾与控制节点重合，并且切线相同.</li>
+<li>使用 <strong>3 次</strong> B 样条曲线 (4 阶 <span class="arithmatex">\(k=4\)</span> ), 能够保证二阶导数连续，曲率连续（汽车行驶更平稳）</li>
+</ol>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/260724041">B 样条算法 (B-spline) - 知乎</a> 这里的代码是错误的</p>
+</blockquote>
+<ul>
+<li>均匀 B 样条曲线：节点沿参数轴均匀等距分布，即<span class="arithmatex">\(u_{i+i}-u_i=C&gt;0\)</span> 时，为均匀 B 样条函数</li>
+<li>准均匀 B 样条曲线</li>
+<li>分段 Bezier 曲线</li>
+<li>非均匀 B 样条曲线</li>
+</ul>
+<blockquote>
+<p><a href="https://pages.mtu.edu/~shene/COURSES/cs3621/NOTES/">CS3621 Introduction to Computing with Geometry Course Notes</a> 其中 <strong>Unit 6: B-spline Curves</strong><br />
+<a href="https://blog.csdn.net/tuqu/article/details/4749586">B-样条曲线教程（B-spline Curves Notes）目录</a> 翻译版本，如果需要<strong>详细理解原理</strong>，可以看这个。<br />
+<a href="https://www.jianshu.com/p/49aff913104c">B-样条曲线 (B-spline Curve) 总结 - 简书</a> 二次摘录…</p>
+</blockquote>
+<p>B-样条曲线是贝塞尔曲线的推广，为了用更低阶曲线获得更好的拟合效果. （看描述是分段多个贝塞尔曲线）. 与贝塞尔曲线相比：</p>
+<ol>
+<li>定义域被节点细分（subdivided）；</li>
+<li>基函数不是在整个区间非零。实际上，每个 B 样条基函数在附近一个子区间非零，因此，B-样条基函数相当“局部”。</li>
+</ol>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-38-37.png" /></p>
+<p>第 i 个 p 次 B-样条基函数，写为<span class="arithmatex">\(N_{i,p}(u)\)</span>，递归定义如下：<br />
+<img alt="B-样条基函数定义" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-38-49.png" /></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">零次基函数</label><label for="__tabbed_1_2">一次基函数</label><label for="__tabbed_1_3">二次基函数</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-39-08.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-39-19.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-12-12-39-30.png" /></p>
+</div>
+</div>
+</div>
+<p>B-样条曲线 (B-spline Curves)<br />
+给定 n + 1 个控制点<span class="arithmatex">\(P_0, P_1, …, P_n\)</span> 和一个节点向量<span class="arithmatex">\(U = \{ u_0, u_1, …, u_m \}\)</span>,  p 次 B-样条曲线由这些控制点和节点向量 U 定义：<span class="arithmatex">\(C(u)=\sum_{i=0}^{n}N_{i,p}(u)P_i\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>U 是自变量序列，P 是对应的因变量<br />
+这里 P 是就是路径点, U 可以使用距离作为参数化路径的参数.</p>
+</div>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d2c36239250f7c54bbb85.png" /></p>
+<table>
+<thead>
+<tr>
+<th>open</th>
+<th>clamped</th>
+<th>closed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d2bab239250f7c54ab754.png" /></td>
+<td><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d2c08239250f7c54b66ce.png" /></td>
+<td><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d2c0f239250f7c54b746f.png" /></td>
+</tr>
+<tr>
+<td><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d3904239250f7c565e33c.png" /></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-spline">1.2 Spline 编程方法<a class="headerlink" href="#12-spline" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://docs.scipy.org/doc/scipy/reference/interpolate.html?highlight=spline#id1">Interpolation (scipy.interpolate) — SciPy v1.8.0 Manual</a><ul>
+<li><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d6cca239250f7c5d1005d.png" /></li>
+</ul>
+</li>
+<li><a href="https://docs.scipy.org/doc/scipy/tutorial/interpolate.html?highlight=spline#spline-interpolation">Interpolation (scipy.interpolate) — SciPy v1.8.0 Manual</a></li>
+</ul>
+<p><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.BSpline.html">scipy.interpolate.BSpline — SciPy v1.8.0 Manual</a> 使用 BSpline 类实现 (<strong>但是这个没搞明白</strong>… t 应该怎么给，"The number of knots needs to agree with the number of datapoints and the number of derivatives at the edges. "）<br />
+<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.make_interp_spline.html">scipy.interpolate.make_interp_spline — SciPy v1.8.0 Manual</a> 这个是函数形式实现的.</p>
+<div class="admonition example">
+<p class="admonition-title">2-D B-Spline</p>
+<p>生成一个二维图线举例</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">make_interp_spline</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 极坐标图形</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span> <span class="c1"># 0~2pi</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>  <span class="c1"># convert to Cartesian coordinates</span>
+<span class="n">P</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span> <span class="c1">#　按列合并x,y作为目标点</span>
+
+<span class="c1"># Build an interpolating curve, parameterizing it by the angle</span>
+<span class="n">spl</span> <span class="o">=</span> <span class="n">make_interp_spline</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">P</span><span class="p">)</span>
+
+<span class="c1"># 用更细间距的自变量计算插值结果</span>
+<span class="n">phi_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">x_new</span><span class="p">,</span> <span class="n">y_new</span> <span class="o">=</span> <span class="n">spl</span><span class="p">(</span><span class="n">phi_new</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="c1"># 这里把 P_new 拆开</span>
+
+<span class="c1"># 绘图比较</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y_new</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d73ae239250f7c5df48ea.png" /></p>
+</div>
+<p><a href="https://www.osgeo.cn/python-tutorial/scipy-bspline.html">2.4. B-Spline 样条曲线 — Python 基础与应用 文档</a> 这个里面是用的接口函数 <code>splprep, splev</code> , 感觉没必要， 直接用上面封装好的函数就可以了。</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>我们的路径点（比如二维向量）就是控制点 P<br />
+生成准均匀 B 样条的节点矢量 U （下图代码中应该是 <span class="arithmatex">\(u_i\in[0,1]\)</span>). 如果要生成均匀 B 样条节点矢量，只需要 <code>NodeVector = linespace(0, 1, n+k+1);</code><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d3f73239250f7c572c961.png" /><br />
+基函数<br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d4071239250f7c574dda3.png" /><br />
+主函数：<br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624d470a239250f7c5821f84.png" /></p>
+</div>
+<h2 id="2">2 路径跟踪方法<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>下面提到的路径跟踪方法法只关注<strong>参考航向 <span class="arithmatex">\(\psi\)</span> 的调整</strong>, 而船速没有规定, 可以固定为 0.2 一个比较慢的速度<br />
+后面我是使用对数确定<strong>速度</strong> <span class="arithmatex">\(\lg \text{distance}\)</span>, 再乘系数调整快慢.</p>
+<blockquote>
+<p>简单乘系数效果很差.<br />
+<a href="https://www.cnblogs.com/missidiot/p/9378079.html">激活函数--（Sigmoid，tanh，Relu，maxout） - weilongyitian - 博客园</a><br />
+用过 <code>tanh</code>, 可能是因为激活函数的斜率变化太大, 船会升到很快的速度又来不及减速.<br />
+所以还是对数好用很多.</p>
+</blockquote>
+<p>虽然无人艇坐标表示那里，XY 轴位置和平时不太一样 (X 指北/上）, 但是我觉得坐标计算之类的还是可以用常规坐标系，因为只是观察角度变了.</p>
+<h3 id="21">2.1 最近会遇点法<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>DCPA（distance closest point of approach）：是船舶到最近会遇点距离<br />
+TCPA（time closest point of approach）：船舶到最近会遇点时间</p>
+<p>最近会遇点法：找到据离自己最近的点 <code>path[i]</code>，然后朝着它走.<br />
+但是, 船在路线上时, 朝着最近点走很容易震荡, 因此要朝着 <code>path[i+k]</code> 走.</p>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/624ad591239250f7c5815b0b.png" /></p>
+<h4 id="211">2.1.1 值确定<a class="headerlink" href="#211" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>简单研究了一下, 最近会遇点法的k没有很好的确定方式. 路线形状, 船速都会影响效果.<br />
+每个仿真周期都需要计算最近距离, 会花费很多时间.</p>
+</blockquote>
+<p>下面是一个参考的策略, 理论上以大概1s后的目标位置作为目标…</p>
+<div class="highlight"><pre><span></span><code><span class="n">unit_distance</span><span class="p">=</span><span class="nb">mean</span><span class="p">(</span><span class="nb">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">diff</span><span class="p">(</span><span class="nb">path</span><span class="p">)</span><span class="o">.^</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span><span class="w"> </span><span class="c">% 相邻两个路径点之间的平均距离</span><span class="w"></span>
+<span class="n">v</span><span class="p">=</span><span class="mf">0.2</span><span class="p">;</span><span class="w"></span>
+<span class="n">k</span><span class="p">=</span><span class="nb">round</span><span class="p">(</span><span class="n">v</span><span class="o">/</span><span class="n">unit_distance</span><span class="p">)</span><span class="w"> </span><span class="c">% 当前路径建议的 k</span><span class="w"></span>
+</code></pre></div>
+<h4 id="212">2.1.2 角度计算方法<a class="headerlink" href="#212" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(\arctan\)</span> 只能得到 <span class="arithmatex">\([-0.5\pi,0.5\pi]\)</span> , 因此通过条件判断进行修正, 获得 <span class="arithmatex">\([-\pi,\pi]\)</span></p>
+<h4 id="213">2.1.3 角度(参考航向)突变问题<a class="headerlink" href="#213" title="Permanent link">&para;</a></h4>
+<h5 id="2131">2.1.3.1 说明<a class="headerlink" href="#2131" title="Permanent link">&para;</a></h5>
+<p>参考航向具有周期性, 参考航向为<span class="arithmatex">\([-\pi，\pi]\)</span>，可能会发生跳变，比如上一时刻的航向是-179度，下一时刻可能是179度，实际变化了2度，但是直接相减就是358度</p>
+<details class="example">
+<summary>未修正效果</summary>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/6252b4b0239250f7c5e78489.png" /><br />
+上图原因就是计算出的角度在 <span class="arithmatex">\(\pi,-\pi\)</span> 之间反复横跳, 虽然我们想表示的角度相差不大.<br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/phi.svg" /></p>
+</details>
+<h5 id="2132">2.1.3.2 解决方法<a class="headerlink" href="#2132" title="Permanent link">&para;</a></h5>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>其实最合理的方法是第一个, 因为实际系统测量的值就是一定范围内的.<br />
+但是问题在于参考输入会有"突变", 例如路线的参考方向在 <span class="arithmatex">\(-\pi\)</span> 左右调整<br />
+而 ADRC 的 TD 具有滤波作用, 会延缓这种"突变"… 所以角度发生快速变化时, 会出现不想要的中间值, 效果就会不太好;<br />
+所以最后使用的方法二.</p>
+</div>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/625aa580239250f7c5008c85.png" /></p>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/625aacd8239250f7c50d5fb7.png" /></p>
+<h6 id="21321">2.1.3.2.1 方法一: 角度限定范围<a class="headerlink" href="#21321" title="Permanent link">&para;</a></h6>
+<ol>
+<li>首先需要调整 无人艇 模型.<br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/6252bdb8239250f7c5f96df5.png" /><br />
+    积分到达上下限后,  <span class="arithmatex">\(\psi\)</span> 会自动调整, 限制在一定区间内, 所以不会一直增长之类的.</li>
+<li>然后在控制的时候采取以下策略:<br />
+    假设计算出的理论参考航向是 <span class="arithmatex">\(\psi\)</span>, 期望是 <span class="arithmatex">\(u\)</span>,<br />
+    if <span class="arithmatex">\(u-\psi&gt;\pi\)</span>, then <span class="arithmatex">\(u=u-2\pi\)</span><br />
+    elseif <span class="arithmatex">\(u-\psi&lt;-\pi\)</span>, then <span class="arithmatex">\(u=u+2\pi\)</span></li>
+</ol>
+<p>角度变化最大幅度应该为 <span class="arithmatex">\(\pi\)</span>, 所以如果要更新的幅度 <span class="arithmatex">\(\delta=|u-\psi|\)</span> 超过了 <span class="arithmatex">\(\pi\)</span>, 就说明要换一个方向了.<br />
+画一个圆圈图好理解, 能推出上面的策略.</p>
+<details class="example">
+<summary>修正后效果</summary>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/6252c97c239250f7c515b7f2.png" /><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/6252c9fa239250f7c5176c3a.png" /><br />
+最后跟踪效果挺好的, 中间过程有点丑陋…<br />
+<code>ref yaw</code> 有锯齿形小幅震荡, 是因为路径点是离散的, 总是先到达一个点又切换另一个点, 就会产生给定的突变.</p>
+</details>
+<h6 id="21322">2.1.3.2.2 方法二: 角度不限定范围<a class="headerlink" href="#21322" title="Permanent link">&para;</a></h6>
+<p>无人艇角度不再是 <span class="arithmatex">\([-\pi,\pi]\)</span>, 而是 <span class="arithmatex">\(\psi=\int_0^t \mathrm{d}{\psi}\)</span><br />
+参考航向 <span class="arithmatex">\(u\)</span> 调整到 <span class="arithmatex">\(\psi\)</span> 所在区间, 保证更新的幅度 <span class="arithmatex">\(\delta=|u-\psi|&lt;\pi\)</span></p>
+<blockquote>
+<p>integrator 绕回状态的意义在于, 防止 psi 值太大, 而实际的控制器输出是有限的.<br />
+    但是对于数字控制器应该并不是问题.</p>
+</blockquote>
+<h3 id="22">2.2 视线导引法<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p><a href="http://html.rhhz.net/yykj/html/201706005.htm">基于LOS法的自航模航迹跟踪控制算法实现</a><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-04-16-12-07-10.png" /></p>
+<div class="arithmatex">\[
+{\alpha _\phi } = {\alpha _k} + \arctan \left( {\frac{{ - e}}{\varDelta }} \right)
+\]</div>
+<p>根据公式和画图理解… 我觉得<strong>期望航向角</strong>就是 当前位置朝向目标位置 <span class="arithmatex">\(x_{LOS},y_{LOS}\)</span>. 公式这样写是为了说明计算得到的航向角是在路径方向上进行的<strong>修正</strong>.<br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-04-16-12-12-52.png" /><br />
+至于目标位置如何确定, 该文献提到是: <strong>期望航向点</strong>与被控船舶<strong>当前位置</strong>在期望航迹上的<strong>投影点</strong>相距 <span class="arithmatex">\(\Delta\)</span></p>
+<blockquote>
+<p>在<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CPFD&amp;dbname=CPFDLAST2021&amp;filename=KZLL202107005092&amp;uniplatform=NZKPT&amp;v=KhoR2Ce37vzzyOt5f8na3LPtaMGEFKEH27jevkj0ebUvJT38YwwYvLjc4MS0plAkeUEQUMlkDmI%3d">Development status of the LOS guidance strategy and realization of the USV path tracking control</a>, 有比较详细的介绍.<br />
+The LOS guidance strategy based on look ahead distance<br />
+针对直线路径跟踪, 是通过某种几何方法计算出这个投影点, 即船到路径的最短距离. 之后再确定得到目标点.<br />
+而复杂路径是由一段段直线路径组合而成的.</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>判断船当前位于哪段直线区间(或者计算曲线定义路径的切线), 计算好像比较复杂(不会算), 最后并没有用这种目标点确定方法.</p>
+</div>
+<p><strong>期望航向点进行判别和切换</strong>: 以船为圆心, 一定半径内视为被访问过了. 访问过此路径点后, 切换到下一个.<br />
+(例如设定观测距离 5m)</p>
+<p><a href="https://ieeexplore.ieee.org/document/6868251?msclkid=332348f0bd3711eca5c159491cd9fd6e">Line-of-Sight Path Following for Dubins Paths With Adaptive Sideslip Compensation of Drift Forces | IEEE Journals &amp; Magazine | IEEE Xplore</a><br />
+<img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-04-16-12-01-39.png" /></p>
+<div class="arithmatex">\[
+\begin{equation} \psi _{d}=\gamma _{p}+\tan ^{-1}\left ( -\frac {1}{\Delta }(y_{e}+\alpha )\right ) \end{equation}
+\]</div>
+<p>角度计算相同(有一个修正项 <span class="arithmatex">\(\alpha\)</span> ), 关于目标点的确定, 我没有仔细看, 好像是说计算所有可能点, 选择让船的角度变化最小的那个.</p>
+<blockquote>
+<p>This is a nonlinear optimization problem that can be solved<br />
+numerically. However, for many paths <span class="arithmatex">\(\theta^*\)</span> can be found<br />
+by computing <strong>all possible</strong> projection candidates <span class="arithmatex">\(\theta_i\)</span> given by (3) and <strong>choose the one closest</strong> to the previous <span class="arithmatex">\(\theta^*\)</span> -value.</p>
+</blockquote>
+<h3 id="23">2.3 最后采用的方法<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p>角度计算: 反三角函数计算<br />
+目标点: <del>算当前位置到路线的<strong>投影点</strong>, 投影点往下 nL 距离获得目标点</del> 路径点<br />
+然后当船舶进入该期望航向点一定范围时，则需要自动放弃跟踪该期望航向点，而转入跟踪下一个期望航向点</p>
+</div>
+<p><img alt="" src="assets/%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA/2022-05-11-11-46-45.png" /></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="%E6%B5%B7%E6%B5%AA.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 海浪" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              海浪
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="%E8%87%AA%E6%8A%97%E6%89%B0%E6%8E%A7%E5%88%B6/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: README" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              README
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
