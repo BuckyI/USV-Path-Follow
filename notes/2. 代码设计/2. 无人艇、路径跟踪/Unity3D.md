@@ -173,10 +173,10 @@ go.transform.SetParent(GetComponent<Transform>());
 Ocean 类的 Query 方法也可以用. 细节不一样.
 
 **波高**
-![](https://pic.imgdb.cn/item/626905a3239250f7c5bb12d6.png)
+![](assets/Unity3D/626905a3239250f7c5bb12d6.png)
 
 **法线**
-![](https://pic.imgdb.cn/item/626905b5239250f7c5bb31bd.png)
+![](assets/Unity3D/626905b5239250f7c5bb31bd.png)
 
 **波速**
 手册里没有提, 但是可以从 WaveSpectrum 中获取到.
@@ -184,14 +184,14 @@ Ocean 类的 Query 方法也可以用. 细节不一样.
 
 **随波浪前进**
 displacementX, displacementZ 是两个方向上的位移
-![](https://pic.imgdb.cn/item/626902eb239250f7c5b52375.png)
+![](assets/Unity3D/626902eb239250f7c5b52375.png)
 上图代码把速度替换成波速 (乘以deltaTime) 就是随波浪流动了.
 
 ## 9 坐标系
 
 有一个不一样的坐标系, 比较容易混淆, 简单总结一下:
 
-![](https://pic.imgdb.cn/item/6267b2b3239250f7c51b1da1.png)
+![](assets/Unity3D/6267b2b3239250f7c51b1da1.png)
 
 - 普通坐标系是我们一般习惯的, 左下角是坐标原点的坐标系.
 - Unity 里的坐标系(这里不提垂直方向的y), 名字变了, psi (旋转角度) 方向变了, 规律是: 与普通坐标系下计算得到角度的和是$0.5\pi+2k\pi$
