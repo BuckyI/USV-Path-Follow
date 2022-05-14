@@ -37,8 +37,9 @@ public class KinematicUSV : MonoBehaviour
         // 控制信号转换为推进器的力, 进行约束
         double F1 = (tau_u + tau_r) / 2.0;
         double F2 = (tau_u - tau_r) / 2.0;
-        F1 = F1 > MAX_F ? MAX_F : (F1 < 0 ? 0 : F1);
-        F2 = F2 > MAX_F ? MAX_F : (F2 < 0 ? 0 : F2);
+        // 推进器推力是 -MAX_F ~ +MAX_F
+        F1 = F1 > MAX_F ? MAX_F : (F1 < -MAX_F ? -MAX_F : F1);
+        F2 = F2 > MAX_F ? MAX_F : (F2 < -MAX_F ? -MAX_F : F2);
         double tau1 = F1 + F2;
         double tau2 = F1 - F2;
 

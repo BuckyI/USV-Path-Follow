@@ -154,8 +154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathsAssets:
   - {fileID: 4900000, guid: 91cb1a24a8b83ab4383bba2b391ae5b8, type: 3}
-  - {fileID: 4900000, guid: 1a14b58b8f944974e81f58a657e96472, type: 3}
-  - {fileID: 4900000, guid: f6967fa10be239f40b7cfc9b5f405404, type: 3}
   showRoute: 1
   blockNavigation: 0
 --- !u!4 &114454329
