@@ -712,8 +712,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    1 关于无人艇模型
+  <a href="#1-kinematicusvcs" class="md-nav__link">
+    1 关于无人艇模型 KinematicUSV.cs
   </a>
   
 </li>
@@ -1225,8 +1225,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    1 关于无人艇模型
+  <a href="#1-kinematicusvcs" class="md-nav__link">
+    1 关于无人艇模型 KinematicUSV.cs
   </a>
   
 </li>
@@ -1399,34 +1399,20 @@
 </ul>
 </li>
 </ul>
-<h2 id="1">1 关于无人艇模型<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-kinematicusvcs">1 关于无人艇模型 <code>KinematicUSV.cs</code><a class="headerlink" href="#1-kinematicusvcs" title="Permanent link">&para;</a></h2>
 <p>Unity 中有刚体组件可以添加力之类的, 但是无人艇运动模型要更复杂一些, 我没想到如何用Unity的刚体实现此模型.<br />
 <code>KinematicUSV.cs</code>, 根据控制器给出的推力和转矩, 对 transform 进行更新. (也保留外部对其更改)</p>
+<p>后续应该与刚体组件进行兼容,<br />
+例如舍弃无人艇模型中的 x, y, psi 状态变量, 直接由Unity里的坐标和旋转信息获取.<br />
+无人艇模型中的速度和角速度与刚体组件的速度和角速度同步. (?)<br />
+这样通过对刚体组件施加力, 就可以通过 <code>KinematicUSV.cs</code> 计算得到速度. (?)</p>
 <h2 id="2-adrc">2 关于推力限定与ADRC控制<a class="headerlink" href="#2-adrc" title="Permanent link">&para;</a></h2>
 <p>MATLAB 里螺旋桨推力限定为 <span class="arithmatex">\([0,50]\)</span>,</p>
 <p>但是螺旋桨反转的话, 力的方向就相反. 所以推力可以为负</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="arithmatex">\(F\in [-100,100]\)</span></label><label for="__tabbed_1_2"><span class="arithmatex">\(F \in [0,100]\)</span></label><label for="__tabbed_1_3"><span class="arithmatex">\(F\)</span> 无限制</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><img alt="" src="assets/Unity3D/2022-05-11-10-12-02.png" /></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="" src="assets/Unity3D/2022-05-11-10-22-46.png" /></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="" src="assets/Unity3D/2022-05-11-10-49-14.png" /></p>
-</div>
-</div>
-</div>
-<p>感觉没什么区别… 可能的原因:</p>
+<p>ADRC 需要调整:</p>
 <ol>
-<li>扰动幅度比较大, 船速大概2m/s, 扰动是船随波速1m/s移动</li>
-<li>扰动作用是直接修改船的位置, 而不是力的形式, 比较简单粗暴(?)</li>
-<li>ADRC 需要调整.<ol>
 <li><strong>控制量输出震荡比较大</strong>, 参数应该还需要再调一下, 对于微小偏差反映比较大</li>
-<li>另外对力进行限定的话, 又会产生一部分系统设计带来的"扰动", ADRC 估计的扰动不应该包括这部分, 即观测器输入中, 被控系统的输入是限定后的控制量(目前是没有限定后的控制量).</li>
-</ol>
-</li>
+<li>还有很重要的一点是, 另外对力进行限定的话, 又会产生一部分系统设计带来的"扰动", 例如控制器输出 100, 经过限定后变为 50, ADRC 会认为存在扰动并尝试增大输出来抵消此"扰动". 这有可能是控制器输出震荡的原因之一.</li>
 </ol>
 <h2 id="3">3 运行期间控制观察角度<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p>给 camera 挂脚本, 键盘控制, 调整 transform</p>
@@ -1510,6 +1496,12 @@
 <h2 id="7">7 环境搭建<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <p>见 <a href="./Scene/">Scene 部分</a>.</p>
 <h2 id="8-disturbancecs">8 <code>Disturbance.cs</code><a class="headerlink" href="#8-disturbancecs" title="Permanent link">&para;</a></h2>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>其实波浪扰动应该是获得一个力和力矩, 然后通过 Unity 里的刚体组件施加.<br />
+但是我暂时没找到好的方法让船的模型与刚体组件相融合<br />
+总的来说, 只是实现了一个简简简易版本的扰动作用</p>
+</div>
 <p>随波浪流动的干扰效果</p>
 <p>查询波浪信息, 从而获得一个扰动<br />
 主要参考: CetoManual</p>
@@ -1529,6 +1521,28 @@ Ocean 类的 Query 方法也可以用. 细节不一样.</p>
 displacementX, displacementZ 是两个方向上的位移<br />
 <img alt="" src="assets/Unity3D/626902eb239250f7c5b52375.png" /><br />
 上图代码把速度替换成波速 (乘以deltaTime) 就是随波浪流动了.</p>
+<div class="admonition note">
+<p class="admonition-title">修改位置</p>
+<p><img alt="" src="assets/Unity3D/2022-05-11-10-49-14.png" /></p>
+</div>
+<p>后来发展, 这种扰动作用的实现是直接修改船的位置, 不会影响 KinematicUSV 里面的速度和角度, 进而也不会被(速度和角度)控制器观测到.</p>
+<div class="admonition note">
+<p class="admonition-title">修改速度</p>
+<p>后来改成修改速度和角度. 将波浪的速度与船的速度进行叠加.<br />
+单纯扰动作用下船的轨迹 (速度在0.5m/s-6m/s)<br />
+<img alt="" src="assets/Unity3D/2022-05-14-11-24-38.png" /><br />
+<img alt="" src="assets/Unity3D/2022-05-14-11-56-02.png" /><br />
+<img alt="" src="assets/Unity3D/disturbance.svg" /><br />
+这样看的话其实扰动挺小的… 但是是每次更新都会改变这么多, 计算一个累积量就知道了.<br />
+其实前半段是体现了抗扰作用, 但是当扰动相对大到一定程度效果就不好了<br />
+比如中间突起那一段, 还有后半段当船速下降后, 系统就开始不稳定了… (也有可能是我实现的方法有未知bug)<br />
+<img alt="" src="assets/Unity3D/disturbance1.svg" /><br />
+总的来说, 扰动的实现需要有更好的方法.</p>
+</div>
+<p><img alt="" src="assets/Unity3D/2022-05-14-13-40-38.png" /></p>
+<p>逐渐增加强度, 印证了上面的想法… 扰动小时可以抵消一些, 大时就不稳定了.<br />
+<img alt="" src="assets/Unity3D/disturbance_increase.svg" /><br />
+<img alt="" src="assets/Unity3D/disturbance_increase1.svg" /></p>
 <h2 id="9">9 坐标系<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
 <p>有一个不一样的坐标系, 比较容易混淆, 简单总结一下:</p>
 <p><img alt="" src="assets/Unity3D/6267b2b3239250f7c51b1da1.png" /></p>
