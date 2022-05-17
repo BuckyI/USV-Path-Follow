@@ -1150,6 +1150,13 @@
 <li>使用 S-Function 也可以</li>
 </ul>
 <p>无人艇模型的输入是<span class="arithmatex">\(\tau_u,\tau_r\)</span> (实际是左右推力 <span class="arithmatex">\(F_p,F_s\)</span>), 输出是 <span class="arithmatex">\(x,y,u,v,r\)</span> 之类的</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\dot{x}&amp;=\cos(\psi)u-\sin(\psi)v\\
+\dot{y}&amp;=\sin(\psi)u+\cos(\psi)v\\
+\dot{\psi}&amp;=r
+\end{aligned}
+\]</div>
 <h2 id="2-adrc">2 ADRC 编写<a class="headerlink" href="#2-adrc" title="Permanent link">&para;</a></h2>
 <p>ADRC 差分方程形式<sup id="fnref:adrc"><a class="footnote-ref" href="#fn:adrc">3</a></sup>:</p>
 <p><img alt="" src="assets/%E6%A8%A1%E5%9E%8B%E7%BC%96%E5%86%99/2022-04-02-14-20-16.png" /></p>

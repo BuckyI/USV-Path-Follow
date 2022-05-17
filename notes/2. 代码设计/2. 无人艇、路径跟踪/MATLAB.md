@@ -2,7 +2,7 @@
 aliases: 
 tags: 
 date created: 2022-05-10 19:51:54
-date modified: 2022-05-11 11:19:38
+date modified: 2022-05-14 20:57:51
 ---
 
 # MATLAB
@@ -25,7 +25,7 @@ date modified: 2022-05-11 11:19:38
     - `test.mlx`
 
 说明:
-线性 ADRC (LADRC) 是简化版本, 参数整定比较容易, 并且方便改进, 也可以用于航行器控制[^lsdrc].
+线性 ADRC (LADRC) 是简化版本, 参数整定比较容易, 并且方便改进, 也可以用于航行器控制[^ladrc].
 [^ladrc]:[Path following control of fully-actuated autonomous underwater vehicle in presence of fast-varying disturbances - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0141118718307752?via%3Dihub)
 > It was observed that the LADRC technique does not give an effective transient and disturbance rejection response, when the system to be controlled has complex dynamics such as right half plane poles (unstable system), right half plane zeros (non-minimum phase systems) and time delay[^shortcoming].
 [^shortcoming]: [Generalized Active Disturbance Rejection Control: Review, Applications and Challenges | IEEE Conference Publication | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9465246)
