@@ -1,0 +1,1585 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <xml><w:WordDocument><w:View>Print</w:View></xml>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="ProgId" content="Word.Document">
+    <meta name="Generator" content="Microsoft Word 11">
+    <meta name="Originator" content="Microsoft Word 11">
+    <link rel="File-List" href="zdjspy.files/filelist.xml">
+    <title>中国海洋大学毕业论文(设计)成绩评定表(指导教师评审表)-表格要进行导出，在指导教师角色下</title>
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>change</o:Author>
+  <o:LastAuthor>change</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2011-10-27T08:44:00Z</o:Created>
+  <o:LastSaved>2011-10-27T08:44:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>67</o:Words>
+  <o:Characters>386</o:Characters>
+  <o:Company>change</o:Company>
+  <o:Lines>3</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>452</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: 宋体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-alt: SimSun;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: variable;
+            mso-font-signature: 3 135135232 16 0 262145 0;
+        }
+
+        @font-face {
+            font-family: 黑体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-alt: SimHei;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: variable;
+            mso-font-signature: 1 135135232 16 0 262144 0;
+        }
+
+        @font-face {
+            font-family: "\@宋体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: auto;
+            mso-font-signature: 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "\@黑体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+            mso-font-charset: 134;
+            mso-generic-font-family: auto;
+            mso-font-pitch: auto;
+            mso-font-signature: 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: 仿宋;
+            panose-1: 2 1 6 9 3 1 1 1 1 1;
+            mso-font-charset: 134;
+            mso-generic-font-family: modern;
+            mso-font-pitch: fixed;
+            mso-font-signature: 1 135135232 16 0 262144 0;
+        }
+
+        @font-face {
+            font-family: "\@仿宋";
+            panose-1: 2 1 6 9 3 1 1 1 1 1;
+            mso-font-charset: 134;
+            mso-generic-font-family: modern;
+            mso-font-pitch: fixed;
+            mso-font-signature: 1 135135232 16 0 262144 0;
+        }
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            mso-pagination: none;
+            font-size: 10.5pt;
+            mso-bidi-font-size: 12.0pt;
+            font-family: "Times New Roman";
+            mso-fareast-font-family: 宋体;
+            mso-font-kerning: 1.0pt;
+        }
+
+        span.GramE {
+            mso-style-name: "";
+            mso-gram-e: yes;
+        }
+        /* Page Definitions */
+        @page {
+            mso-page-border-surround-header: no;
+            mso-page-border-surround-footer: no;
+        }
+
+        @page Section1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 90.0pt 72.0pt 90.0pt;
+            mso-header-margin: 42.55pt;
+            mso-footer-margin: 49.6pt;
+            mso-paper-source: 0;
+            layout-grid: 15.6pt;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+        -->
+    </style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+
+    <script language="javascript">
+        /**//* 
+* 
+* @param {Object} cont 要导出的html元素内容的id,注意不要加双引号 
+* @param {Object} key 分页关键字 
+*/
+        function AllAreaWord(cont, key) {
+            var oWD = new ActiveXObject("Word.Application");
+            //默认为页面视图 
+            var oDC = oWD.Documents.Add("", 0, 0);
+            var oRange = oDC.Range(0, 1);
+            //var oRange1 = oDC.Range(0,2); 
+            var sel = document.body.createTextRange();
+            //参数为html元素id 
+            sel.moveToElementText(cont);
+            sel.select();
+            sel.execCommand("Copy");
+            oRange.Paste();
+            oWD.Application.Visible = true;
+            //得到打开后word的selection对象 
+            var selection = oWD.Selection;
+            //设置字体大小 
+            selection.Font.Size = 10;
+            //ctrl+A 全选操作 
+            selection.WholeStory();
+            //清除格式 
+            selection.Find.ClearFormatting();
+            //指定查找关键字 
+            selection.Find.Text = key;
+            //^m为手动分页符标记 
+            //向下查找 
+            selection.Find.Forward = true;
+            selection.Find.Wrap = 1;
+            //不区分大小写 
+            selection.Find.MatchCase = false;
+            //不匹配整个单词 
+            selection.Find.MatchWholeWord = false;
+            //如果找到指定字符串返回真,否则返回false 
+            while (selection.Find.Execute()) {
+                //插入分页符,分页符常量为7,具体可查word api 
+                selection.InsertBreak(7);
+            }
+
+            window.close();
+        }
+    </script>
+
+</head>
+<body lang="ZH-CN" style='tab-interval: 21.0pt; text-justify-trim: punctuation' onload="javascript:AllAreaWord(test,'^');">
+    <div id="test">
+        
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+            <span style="font-size: 14pt; font-family: 黑体; mso-ascii-font-family: 'Times New Roman'">中国海洋大学本科毕业设计（论文）指导教师评分标准及评阅表</span><span lang="EN-US" style="font-size: 14pt; mso-fareast-font-family: 黑体"><o:p></o:p></span>
+        </p>
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+            <span lang="EN-US" style="font-size: 12pt; mso-fareast-font-family: 黑体">(</span><span
+                style="font-size: 12pt; font-family: 黑体; mso-ascii-font-family: 'Times New Roman'">理、工、农、医类专业用表</span><span
+                    lang="EN-US" style="font-size: 12pt; mso-fareast-font-family: 黑体">)<o:p></o:p></span>
+        </p>
+        <div align="center">
+            <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-right: medium none; border-top: medium none; border-left: medium none; width: 430.9pt; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext"
+                width="575">
+                <tr style="height: 19.45pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">学生姓名<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 15.42%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="15%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                张克明</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 16.64%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="16%" colspan="2">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">院（系、中心）<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 19.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="19%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                工程学院</span>
+                        </p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 12.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="12%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">专业年级<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 22.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="22%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                2018 自动化</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.5pt; mso-yfti-irow: 1">
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 28.6%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="28%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">论文（设计）题目<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 71.4%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="71%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                面向多任务点的无人艇协同路径规划与跟踪控制方法研究</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.5pt; mso-yfti-irow: 1; display: none">
+                    <td colspan="4" style="padding: 0cm 5.4pt; border-right: 1pt solid windowtext; border-top: medium none #d4d0c8; border-left: 1pt solid windowtext; width: 99%; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">评阅教师评分</td>
+                    <td colspan="4" style="padding: 0cm 5.4pt; border-right: 1pt solid windowtext; border-top: medium none #d4d0c8; border-left: 1pt solid windowtext; width: 99%; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+                        88&nbsp;</td>
+                    <td colspan="4" style="padding: 0cm 5.4pt; border-right: 1pt solid windowtext; border-top: medium none #d4d0c8; border-left: 1pt solid windowtext; width: 99%; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">答辩记录评分</td>
+                    <td colspan="4" style="padding: 0cm 5.4pt; border-right: 1pt solid windowtext; border-top: medium none #d4d0c8; border-left: 1pt solid windowtext; width: 99%; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt">
+                        83&nbsp;</td>
+                </tr>
+                <tr style="height: 19.05pt; mso-yfti-irow: 2">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">评价项目<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">评价标准（<span lang="EN-US">A</span>级）<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 12pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">满分<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="9" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.42%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">评<span lang="EN-US"><span
+                                style="mso-spacerun: yes"> &nbsp; &nbsp;&nbsp; </span></span>分<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 12.25pt; mso-yfti-irow: 3">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">A<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">B<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">C<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">D<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">E<o:p></o:p></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 21.75pt; mso-yfti-irow: 4">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">选题质量<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">选题符合专业培养目标，体现综合训练要求；题目具有适当难度，有一定的理论意义或实际意义<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">20<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">19-20<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">17-18<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">15-16<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">13-14<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">≤<span lang="EN-US">12<o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 19.5pt; mso-yfti-irow: 5">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                18</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 19.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 16.5pt; mso-yfti-irow: 6">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">文献资料利用能力<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">能独立地利用多种方式查阅中外文献；能正确翻译外文资料；能正确有效地利用各种文献资料<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">9<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">8<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">7<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">≤</span><span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">6<o:p></o:p></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 17.55pt; mso-yfti-irow: 7">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                9</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 18.75pt; mso-yfti-irow: 8">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">实验研究能力<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">研究方案设计合理；实验方法科学；技术路线可行；实验数据可靠；计算正确；理论分析合乎逻辑；动手能力强；能独立完成研究任务；研究结果客观真实；能综合运用所学知识发现和解决实际问题<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">20<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">19-20<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">17-18<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">15-16<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">13-14<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">≤<span lang="EN-US">12<o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 24.75pt; mso-yfti-irow: 9">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                18</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 24.8pt; mso-yfti-irow: 10">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">论文（设计）质量<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">结构严谨，逻辑性强；语言文字表达准确、流畅；格式、图、表规范；有一定的学术水平或应用价值<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">30<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">28-30<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">25-27<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">22-24<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">19-21<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 24.8pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">≤<span lang="EN-US">18<o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.25pt; mso-yfti-irow: 11">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                28</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 12pt; mso-yfti-irow: 12">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">创新能力<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">体现较强的创新意识；应用新理论、新方法，解决新问题；工作有独到见解或新突破<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">9<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">8<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">7<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">6<o:p></o:p></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 14.45pt; mso-yfti-irow: 13">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 14.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 14.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                9</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 14.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 14.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 14.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 12pt; mso-yfti-irow: 14">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">工作态度和工作量<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 40.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="40%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 14pt; mso-line-height-rule: exactly">
+                            <span style="font-size: 9pt; font-family: 宋体">工作认真主动；作风扎实严谨；工作量饱满；圆满完成了任务书所规定的各项任务<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">10<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">9<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">8<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">7<o:p></o:p></span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 12pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-size: 9pt; font-family: 宋体">6<o:p></o:p></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 16.45pt; mso-yfti-irow: 15">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.82%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.24%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                9</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.2%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.32%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 7.84%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 16.45pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="7%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.5pt; mso-yfti-irow: 16">
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.18%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">总分<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 15.42%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="15%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                91</span>
+                        </p>
+                    </td>
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 71.4%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="71%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">是否同意将该论文（设计）提交答辩：是（<span
+                                lang="EN-US"><span style="mso-spacerun: yes">√ </span></span>）否（<span lang="EN-US"><span
+                                    style="mso-spacerun: yes"> </span></span>）<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 88.2pt; mso-yfti-irow: 17">
+                    <td colspan="16" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 88.2pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">具体评阅意见：<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                该生基础理论功底扎实，能充分利用各种文献资料，并具备综合运用所学知识解决实际问题的能力，设计过程积极主动，工作饱满，圆满完成了设计任务书所规定的各项任务，设计报告结构严谨，逻辑性强，语言、文字、图表规范，同意其按期答辩。</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">指导教师（签名）<span lang="EN-US"><u> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2017049.jpg'  width='60' height='30' runat='server' /> </u><span
+                                style="mso-spacerun: yes">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2022 年 5 月 16 日</span>
+                            </span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 17.55pt; mso-yfti-irow: 18">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 17.58%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="17%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">指导教师姓名<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 27.66%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="27%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">职称或学位<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 23.36%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="23%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">工作单位<span lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 31.4%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="31%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">主要讲授课程<span lang="EN-US">/</span>研究方向<span
+                                lang="EN-US"><o:p></o:p></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 17.2pt; mso-yfti-irow: 19; mso-yfti-lastrow: yes">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 17.58%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.2pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="17%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                姚鹏</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 27.66%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.2pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="27%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                博士</span>
+                        </p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 23.36%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.2pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="23%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                工程学院</span>
+                        </p>
+                    </td>
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 31.4%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 17.2pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="31%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 22pt; text-align: center; mso-line-height-rule: exactly">
+                            <span lang="EN-US" style="font-family: 宋体; mso-bidi-font-size: 10.5pt">
+                                无人航行器智能决策与路径规划</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p class="MsoNormal" style="margin: 0cm 0cm 0pt 21pt; text-indent: -21pt; line-height: 18pt; mso-line-height-rule: exactly; mso-char-indent-count: -2.0">
+            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">注：</span><span lang="EN-US">1</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">、请参照</span><span lang="EN-US">A</span><span
+                style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">级标准，对论文（设计）分项打分，并填写在相应项目评分栏中。</span>
+        </p>
+        <p class="MsoNormal" style="margin: 0cm 0cm 0pt 42pt; text-indent: -21pt; line-height: 18pt; mso-line-height-rule: exactly; mso-char-indent-count: -2.0; mso-para-margin-left: 2.0gd">
+            <span lang="EN-US">2</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">、计算出总分。若总分</span><span lang="EN-US">&lt;60</span><span
+                style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分，或“</span><span
+                    style="font-family: 宋体; mso-bidi-font-size: 10.5pt">选题质量</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">”</span><span
+                        lang="EN-US">&lt;12</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分或“</span><span style="font-family: 宋体; mso-bidi-font-size: 10.5pt">论文（设计）质量</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">”</span><span lang="EN-US">&lt;18</span><span
+                            style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分，不能提交答辩；该论文（设计）须限期修改合格后重新评阅和申请答辩。</span>
+        </p>
+        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 21pt; line-height: 18pt; mso-line-height-rule: exactly; mso-char-indent-count: 2.0">
+            <span lang="EN-US">3</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">、具体评阅意见栏不够用时可另附页。</span>
+        </p>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="test">
+        
+    </div>
+
+
+
+
+
+
+    <div id="test">
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+            <span style="font-size: 14pt; font-family: 黑体; mso-ascii-font-family: 'Times New Roman'">中国海洋大学本科毕业论文（设计）答辩记录及成绩评定表</span>
+        </p>
+        <div align="center">
+            <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-right: medium none; border-top: medium none; border-left: medium none; width: 430.9pt; border-bottom: medium none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext"
+                width="575">
+                <tr style="height: 23.25pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 17.38%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt"
+                        width="17%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩人姓名</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 15.22%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="15%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                张克明</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 13.04%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">院（系、中心）</span>
+                        </p>
+                    </td>
+                    <td colspan="3" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 19.58%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="19%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                工程学院</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 10.86%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="10%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">专业</span>
+                        </p>
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">年级</span>
+                        </p>
+                    </td>
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 23.92%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="23%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                2018自动化</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.5pt; mso-yfti-irow: 1">
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">论文（设计）题目：面向多任务点的无人艇协同路径规划与跟踪控制方法研究</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.55pt; mso-yfti-irow: 2">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.02%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">评价项目</span>
+                        </p>
+                    </td>
+                    <td colspan="4" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 41.04%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="41%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">评价标准（</span><span lang="EN-US">A</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">级）</span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.78%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">满分</span>
+                        </p>
+                    </td>
+                    <td colspan="7" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 39.16%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.55pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="39%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">具</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">体</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">评</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.05pt; mso-yfti-irow: 3">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">A</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">B</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">C</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">D</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.05pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">E</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 23.25pt; mso-yfti-irow: 4">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.02%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">论文（设计）质量</span>
+                        </p>
+                    </td>
+                    <td colspan="4" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 41.04%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="41%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">结构严谨，逻辑性强；文字表达准确流畅；条理清楚，重点突出；格式、图、表规范；具有一定的学术水平或实际价值</span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.78%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">50</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">46-50</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">41-45</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">36-40</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">31-35</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体">≤</span><span lang="EN-US">30</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 38.25pt; mso-yfti-irow: 5">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 38.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 38.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                44</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 38.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 38.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 38.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 23.25pt; mso-yfti-irow: 6">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.02%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">论文（设计）报告、讲解情况</span>
+                        </p>
+                    </td>
+                    <td colspan="4" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 41.04%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="41%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">概念清楚，思路清晰；表达准确，重点突出，详略得当；报告时间符合要求</span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.78%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">20</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">19-20</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">17-18</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">-15-16</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">13-14</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体">≤<span lang="EN-US">12</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 30.75pt; mso-yfti-irow: 7">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                15</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 30.75pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 23.25pt; mso-yfti-irow: 8">
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 13.02%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="13%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩表现</span>
+                        </p>
+                    </td>
+                    <td colspan="4" rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 41.04%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="41%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">思维敏捷，语言流畅，回答问题准确，有专业深度；仪态端庄，精神风貌好</span>
+                        </p>
+                    </td>
+                    <td rowspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.78%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">30</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">28-30</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">25-27</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">22-24</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">19-21</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体">≤<span lang="EN-US">18</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 23.25pt; mso-yfti-irow: 9">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.7%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                24</span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 6.52%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="6%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 8.72%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 23.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="8%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.4pt; mso-yfti-irow: 10">
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 54.06%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.4pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="54%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">总</span><span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">分</span>
+                        </p>
+                    </td>
+                    <td colspan="8" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 45.94%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.4pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="45%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                83</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.4pt; mso-yfti-irow: 10">
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 54.06%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.4pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="54%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">评阅评分</span>
+                        </p>
+                    </td>
+                    <td colspan="8" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 45.94%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.4pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="45%">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US">
+                                88</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 84.3pt; mso-yfti-irow: 11">
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 84.3pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩中提出的主要问题及回答的简要情况：</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                问题一: 路径平滑算法取三次样条的原因
+为保证二阶导数连续,路径曲率不产生突变，需要采取三阶及以上的样条算法。而更高阶样条存在较多极值，可能存在过拟合现象，因此选取三次。
+问题二：对于无人艇协同的概念理解
+在答辩过程中与老师关于无人艇协同的概念理解存在分歧，在本研究中意指的协同指集中式协同，即通过中央控制中心通过给定信息为无人艇分配任务，以使指定的整体性能指标达到最优。经过与老师的讨论，他所指的协同一定是分布式的，且存在智能体之间的信息交换。
+问题三：对于路径规划的疑问
+本研究中地图信息以及任务点信息是提前确定的。</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩日期：</span><span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;
+                            </span></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                2022
+                                    年
+                                    5
+                                    月
+                                    16
+                                    日</span> <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp;&nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩秘书签字：</span><span lang="EN-US"><span
+                                            style="mso-spacerun: yes"> </span></span>
+                        </p>
+                    </td>
+                </tr>
+                
+                   <tr style="height: 100.3pt; mso-yfti-irow: 12">
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 100.3pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩小组评语：</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                该生在答辩过程中回答问题正确，对课题研究内容清楚，答辩成绩良好。</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;</span></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 241.5pt; mso-char-indent-count: 23.0">
+                            <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>
+                            <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span></span>
+                            &nbsp;</p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩小组成员（签名）：</span><span lang="EN-US"><span style="mso-spacerun: yes"> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2001101.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2002167.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2002123.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2015301.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2020021.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2021036.jpg'  width='60' height='30' runat='server' />  </span></span>
+
+                        </p>
+                    </td>
+                </tr>
+
+                <tr style="height: 100.3pt; mso-yfti-irow: 12">
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 100.3pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩委员会评语：</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                该设计结构合理，文字表达、图表等规范，报告讲述时概念明确，思路较为清晰，能适当突出重点；答辩时有理有据，回答问题正确，答辩委员会一致同意：该生答辩通过，建议授予工学学士学位。</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩委员会成员（签名）：</span><span lang="EN-US"><span style="mso-spacerun: yes"> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2001101.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2006115.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2006169.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2002033.jpg'  width='60' height='30' runat='server' /> <img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2002040.jpg'  width='60' height='30' runat='server' />  </span></span>
+
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">答辩委员会主任（签名）：</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2002040.jpg'  width='60' height='30' runat='server' /> </span></span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 241.5pt; mso-char-indent-count: 23.0">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">年</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp;&nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">月</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp;&nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">日</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 45.7pt; mso-yfti-irow: 13; mso-yfti-lastrow: yes">
+                    <td colspan="13" style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid; width: 100%; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 45.7pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="100%">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">论文（设计）成绩评定等级：良好</span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US">
+                                <o:p>&nbsp;</o:p>
+                            </span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">院（系）学位委员会主席（签名）：</span><span lang="EN-US"><span style="mso-spacerun: yes"><img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2007113.jpg'  width='60' height='30' runat='server' /> &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">年</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp;&nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">月</span><span lang="EN-US"><span style="mso-spacerun: yes"> &nbsp;&nbsp; </span></span>
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">日</span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
