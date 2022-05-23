@@ -1,0 +1,603 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <xml><w:WordDocument><w:View>Print</w:View></xml>
+    <title>
+	无标题页
+</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:仿宋_GB2312;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@仿宋_GB2312";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-link:"标题 3 Char";
+	mso-style-next:正文;
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:173%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:21.0pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:6.0pt;
+	mso-para-margin-left:2.0gd;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-locked:yes;
+	mso-style-link:"标题 3";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+p.1, li.1, div.1
+	{mso-style-name:1;
+	mso-style-next:"正文文本缩进 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:24.0pt;
+	mso-char-indent-count:2.0;
+	line-height:19.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:none;
+	tab-stops:32.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+
+    <script type="text/javascript" language="javascript"> 
+/**//* 
+* 
+* @param {Object} cont 要导出的html元素内容的id,注意不要加双引号 
+* @param {Object} key 分页关键字 
+*/ 
+function AllAreaWord(cont,key) 
+{ 
+var oWD = new ActiveXObject("Word.Application"); 
+//默认为页面视图 
+var oDC = oWD.Documents.Add("", 0,0); 
+var oRange = oDC.Range(0, 1); 
+//var oRange1 = oDC.Range(0,2); 
+var sel = document.body.createTextRange(); 
+//参数为html元素id 
+sel.moveToElementText(cont); 
+sel.select(); 
+sel.execCommand("Copy"); 
+oRange.Paste(); 
+oWD.Application.Visible = true; 
+//得到打开后word的selection对象 
+var selection = oWD.Selection; 
+//设置字体大小 
+selection.Font.Size = 10; 
+//ctrl+A 全选操作 
+selection.WholeStory(); 
+//清除格式 
+selection.Find.ClearFormatting(); 
+//指定查找关键字 
+selection.Find.Text = key; 
+//^m为手动分页符标记 
+//向下查找 
+selection.Find.Forward = true; 
+selection.Find.Wrap = 1; 
+//不区分大小写 
+selection.Find.MatchCase = false; 
+//不匹配整个单词 
+selection.Find.MatchWholeWord = false; 
+//如果找到指定字符串返回真,否则返回false 
+while (selection.Find.Execute()) 
+{ 
+//插入分页符,分页符常量为7,具体可查word api 
+selection.InsertBreak(7); 
+} 
+
+window.close();
+} 
+    </script>
+
+</head>
+<body onload="javascript:AllAreaWord(test,'^');">
+    <div id="test">
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+            <span style="font-size: 16pt; font-family: 黑体; mso-bidi-font-size: 12.0pt">中国海洋大学<span
+                lang="EN-US"><?xml namespace="" ns="urn:schemas-microsoft-com:office:office" prefix="o" ?><o:p></o:p></span></span></p>
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+            <span style="font-size: 16pt; font-family: 黑体; mso-bidi-font-size: 12.0pt">本科毕业论文（设计）任务书<span
+                lang="EN-US"><o:p></o:p></span></span></p>
+        <div align="center">
+            <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-right: medium none;
+                border-top: medium none; border-left: medium none; border-bottom: medium none;
+                border-collapse: collapse; mso-table-layout-alt: fixed; mso-border-alt: solid windowtext .5pt;
+                mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext;
+                mso-border-insidev: .5pt solid windowtext">
+                <tr style="height: 22.95pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: windowtext 1pt solid;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 80.15pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.95pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt" width="107">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">论文（设计）</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">题目</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 370.7pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.95pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="494">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                面向多任务点的无人艇协同路径规划与跟踪控制方法研究
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 22.5pt; mso-yfti-irow: 1">
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 80.15pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="107">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">院（系、中心）</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 90.15pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="120">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                工程学院
+                            </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 50.1pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="67">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">专</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"> </span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">业</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 90.15pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="120">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                自动化
+                            </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 50.1pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="67">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">年</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"> </span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">级</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 90.15pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 22.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="120">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                2018
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 21.6pt; mso-yfti-irow: 2">
+                    <td rowspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 80.15pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.6pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="107">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">课题来源</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.6pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">A-</span><span
+                                style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">自然科学基金与部、省、市级以上科研课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">√</span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td rowspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 90.15pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.6pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="120">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">课题类型</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.6pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">理论课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">√</span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 21.35pt; mso-yfti-irow: 3">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.35pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">B-</span><span
+                                style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">企、事业单位委托课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 21.35pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">应用课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 18.4pt; mso-yfti-irow: 4">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.4pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">C-</span><span
+                                style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">校基金课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 18.4pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">设计型（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 20pt; mso-yfti-irow: 5">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 20pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">D-</span><span
+                                style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">教师自拟课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 20pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">调研综述（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 20pt; mso-yfti-irow: 6">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 20pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">E-</span><span
+                                style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">学生自拟课题（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 140.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 20pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="187">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">其他（</span><span
+                                    style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"></span><span style="font-family: 宋体;
+                                        mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">）</span><span lang="EN-US" style="mso-bidi-font-size: 10.5pt;
+                                            mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 127.75pt; mso-yfti-irow: 7">
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 450.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 127.75pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="601">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">论文（设计）的基本构思和基本任务：</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                <p style="text-indent:21.0pt;">
+	无人艇以其成本低、机动性强、隐蔽性能好等优点，在军事和民用领域中发挥着越来越重要的作用，国内外学者针对如何提升无人艇的自主性能展开了大量研究，其中路径规划是实现无人艇自主航行的一种关键技术。传统的路径规划方法仅考虑了基础的避障需求与路径优化指标（如路径长度、航行时间、能量消耗等），而忽视了多任务点约束，但该类约束在水质采样等任务中不可忽视。此外，无人艇还需精确跟踪规划的路径以完成任务，而水流、风等扰动会大大影响控制精度。
+</p>
+&nbsp; &nbsp; &nbsp; 本论文研究面向多任务点的无人艇协同路径规划与跟踪控制方法。首先，采用谱聚类方法将任务点分配给相应的无人艇，实现多无人艇任务分配；然后，利用改进的自组织映射神经网络方法，确定各无人艇对分配任务点的最优访问顺序，同时可安全躲避障碍物；接着，对规划路径进行平滑处理，并利用自抗扰控制方法实现无人艇对规划路径的精准跟踪；最后，搭建<span>unity3D</span>虚拟仿真场景并进行验证。
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 139.35pt; mso-yfti-irow: 8">
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 450.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 139.35pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="601">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">目前的基础（包括资料收集情况、前期工作情况等）</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                阅读若干篇关于目标分配、路径规划、路径跟踪的文献；学习Python语言；学习unity3D软件。
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 100.1pt; mso-yfti-irow: 9">
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 450.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 100.1pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="601">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">论文（设计）进度安排</span><span
+                                    lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold">
+                                2022年3月：完成基于谱聚类的多无人艇任务分配；完成基于自组织映射的单无人艇路径规划。2022年4月：完成基于自抗扰控制的无人艇路径跟踪。2022年5月：完成unity3D场景下的虚拟视景仿真，完成毕业论文。
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr style="height: 31.55pt; mso-yfti-irow: 10; mso-yfti-lastrow: yes">
+                    <td colspan="6" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 450.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 31.55pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        valign="top" width="601">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%">
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">论文起止时间：自</span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                        style="mso-spacerun: yes"> &nbsp;2022&nbsp; </span></span><span style="line-height: 150%;
+                                            font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                            mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">年</span><span
+                                                lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                                    style="mso-spacerun: yes"> &nbsp;2&nbsp; </span></span><span style="line-height: 150%;
+                                                        font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                                        mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">月</span><span
+                                                            lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                                                style="mso-spacerun: yes"> &nbsp;21&nbsp; </span></span>
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">日起</span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                        style="mso-spacerun: yes"> &nbsp;2022&nbsp; </span></span>
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">年</span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                        style="mso-spacerun: yes"> &nbsp;5&nbsp; </span></span><span style="line-height: 150%;
+                                            font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                            mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">月</span><span
+                                                lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                                    style="mso-spacerun: yes"> &nbsp;13&nbsp; </span></span>
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">日止</span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: 150%">
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">学生（签名）：张克明</span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; vertical-align: middle; line-height: 150%">
+                            <span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-weight: bold">指导教师（签名）：<img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2017049.jpg'  width='60' height='30' runat='server' /></span><span
+                                    lang="EN-US" style="line-height: 150%; mso-bidi-font-size: 10.5pt; mso-bidi-font-weight: bold"><span
+                                        style="mso-spacerun: yes"> &nbsp; &nbsp; &nbsp;
+                                    </span></span><span style="line-height: 150%; font-family: 宋体; mso-bidi-font-size: 10.5pt;
+                                        mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman';
+                                        mso-bidi-font-weight: bold">院（系、中心）负责人（签名）：<img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2006115.jpg'  width='60' height='30' runat='server' /></span></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

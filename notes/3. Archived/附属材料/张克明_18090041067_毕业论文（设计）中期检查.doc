@@ -1,0 +1,621 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"
+    xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <xml><w:WordDocument><w:View>Print</w:View></xml>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="ProgId" content="Word.Document">
+    <meta name="Generator" content="Microsoft Word 11">
+    <meta name="Originator" content="Microsoft Word 11">
+    <link rel="File-List" href="2-3.files/filelist.xml">
+    <title>中国海洋大学</title>
+    <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>peiyanmin</o:Author>
+  <o:LastAuthor>jjp</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>39</o:TotalTime>
+  <o:LastPrinted>2001-12-03T00:12:00Z</o:LastPrinted>
+  <o:Created>2010-06-24T03:16:00Z</o:Created>
+  <o:LastSaved>2010-06-24T03:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>60</o:Words>
+  <o:Characters>346</o:Characters>
+  <o:Company>nust</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>405</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+
+    <script language="javascript"> 
+/**//* 
+* 
+* @param {Object} cont 要导出的html元素内容的id,注意不要加双引号 
+* @param {Object} key 分页关键字 
+*/ 
+function AllAreaWord(cont,key) 
+{ 
+var oWD = new ActiveXObject("Word.Application"); 
+//默认为页面视图 
+var oDC = oWD.Documents.Add("", 0,0); 
+var oRange = oDC.Range(0, 1); 
+//var oRange1 = oDC.Range(0,2); 
+var sel = document.body.createTextRange(); 
+//参数为html元素id 
+sel.moveToElementText(cont); 
+sel.select(); 
+sel.execCommand("Copy"); 
+oRange.Paste(); 
+oWD.Application.Visible = true; 
+//得到打开后word的selection对象 
+var selection = oWD.Selection; 
+//设置字体大小 
+selection.Font.Size = 10; 
+//ctrl+A 全选操作 
+selection.WholeStory(); 
+//清除格式 
+selection.Find.ClearFormatting(); 
+//指定查找关键字 
+selection.Find.Text = key; 
+//^m为手动分页符标记 
+//向下查找 
+selection.Find.Forward = true; 
+selection.Find.Wrap = 1; 
+//不区分大小写 
+selection.Find.MatchCase = false; 
+//不匹配整个单词 
+selection.Find.MatchWholeWord = false; 
+//如果找到指定字符串返回真,否则返回false 
+while (selection.Find.Execute()) 
+{ 
+//插入分页符,分页符常量为7,具体可查word api 
+selection.InsertBreak(7); 
+} 
+
+window.close();
+} 
+    </script>
+
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:楷体;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@楷体";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 2.0cm 72.0pt 79.4pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+    <!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+
+    <script type="text/javascript" language="javascript"> 
+/**//* 
+* 
+* @param {Object} cont 要导出的html元素内容的id,注意不要加双引号 
+* @param {Object} key 分页关键字 
+*/ 
+function AllAreaWord(cont,key) 
+{ 
+var oWD = new ActiveXObject("Word.Application"); 
+//默认为页面视图 
+var oDC = oWD.Documents.Add("", 0,0); 
+var oRange = oDC.Range(0, 1); 
+//var oRange1 = oDC.Range(0,2); 
+var sel = document.body.createTextRange(); 
+//参数为html元素id 
+sel.moveToElementText(cont); 
+sel.select(); 
+sel.execCommand("Copy"); 
+oRange.Paste(); 
+oWD.Application.Visible = true; 
+//得到打开后word的selection对象 
+var selection = oWD.Selection; 
+//设置字体大小 
+selection.Font.Size = 10; 
+//ctrl+A 全选操作 
+selection.WholeStory(); 
+//清除格式 
+selection.Find.ClearFormatting(); 
+//指定查找关键字 
+selection.Find.Text = key; 
+//^m为手动分页符标记 
+//向下查找 
+selection.Find.Forward = true; 
+selection.Find.Wrap = 1; 
+//不区分大小写 
+selection.Find.MatchCase = false; 
+//不匹配整个单词 
+selection.Find.MatchWholeWord = false; 
+//如果找到指定字符串返回真,否则返回false 
+while (selection.Find.Execute()) 
+{ 
+//插入分页符,分页符常量为7,具体可查word api 
+selection.InsertBreak(7); 
+} 
+
+window.close();
+} 
+    </script>
+
+</head>
+<body lang="ZH-CN" style='tab-interval: 21.0pt; text-justify-trim: punctuation' onload="javascript:AllAreaWord(test,'^');">
+    <div id="test">
+        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center;
+            tab-stops: 343.5pt">
+            <span style="font-size: 15pt; font-family: 黑体; mso-bidi-font-size: 12.0pt">中国海洋大学毕业设计<span
+                lang="EN-US">(</span>论文<span lang="EN-US">)</span>工作中期检查表<span lang="EN-US"><o:p></o:p></span></span></p>
+        <div align="center">
+            <table border="1" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-right: medium none;
+                border-top: medium none; border-left: medium none; width: 433.65pt; border-bottom: medium none;
+                border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 191;
+                mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext;
+                mso-border-insidev: .5pt solid windowtext" width="578">
+                <tr style="height: 25.5pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 75.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt" width="101">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 24.1pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                题目</span></p>
+                    </td>
+                    <td colspan="8" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: windowtext 1pt solid; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 357.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt"
+                        width="477">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>面向多任务点的无人艇协同路径规划与跟踪控制方法研究</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 1">
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 75.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="101">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生姓名</span></p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 63.5pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="85">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>张克明</o:p></span></p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 64.7pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="86">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                班级学号</span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 64.45pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="86">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>18090041067</o:p></span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 42.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="56">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                专业</span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 122.95pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="164">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>自动化</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 2">
+                    <td rowspan="10" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 31.8pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="42">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">指</span><span lang="EN-US" style="font-size: 14pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">导</span><span lang="EN-US" style="font-size: 14pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">教</span><span lang="EN-US" style="font-size: 14pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">师</span><span lang="EN-US" style="font-size: 14pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">填</span><span lang="EN-US" style="font-size: 14pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-size: 14pt; font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                mso-hansi-font-family: 'Times New Roman'">写</span></p>
+                    </td>
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生开题情况</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>开题报告合理可行</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 3">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生调研及查阅文献情况</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>已调研部分文献</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 4">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                毕业论文(设计)原计划有无调整</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>无调整</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 5">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生是否按计划执行工作进度</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>是</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 6">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生是否能独立完成工作任务</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>能</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 7">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生的英文翻译情况</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>暂未翻译</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 8">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生每周接受指导的次数及时间</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>3次，5小时</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 9">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                毕业论文(设计)过程检查记录情况</span></p>
+                    </td>
+                    <td colspan="5" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 204.5pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="273">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>定期检查</o:p></span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 10">
+                    <td colspan="4" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 197.35pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="263">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                学生的工作态度在相应选项划“</span><span lang="EN-US">√</span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                    mso-hansi-font-family: 'Times New Roman'">”</span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 64.25pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="86">
+                        <p align="center" class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: center">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                √认真</span></p>
+                    </td>
+                    <td colspan="2" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 67.05pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="89">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 15.75pt; mso-char-indent-count: 1.5">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                □一般</span><span lang="EN-US"> </span>
+                        </p>
+                    </td>
+                    <td style="border-right: windowtext 1pt solid; padding-right: 5.4pt; border-top: #d4d0c8;
+                        padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8; width: 73.2pt;
+                        padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt; background-color: transparent;
+                        mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="98">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 10.5pt; mso-char-indent-count: 1.0">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                □较差</span></p>
+                    </td>
+                </tr>
+                <tr style="height: 126.05pt; mso-yfti-irow: 11">
+                    <td colspan="9" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: #d4d0c8;
+                        width: 401.85pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 126.05pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;
+                        mso-border-top-alt: solid windowtext .5pt" width="536">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 24.1pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                尚存在的问题及采取的措施：</span><span lang="EN-US" style="font-size: 12pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; &nbsp; 添加更真实的波浪扰动，以贴近实际情况</span></span>
+                        </p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 89.25pt; line-height: 150%;
+                            mso-char-indent-count: 8.5; vertical-align:middle;">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                指导教师签字：</span><img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2017049.jpg'  width='60' height='30' runat='server' /> &nbsp; &nbsp; <span lang="EN-US"><span style="mso-spacerun: yes">
+                                        &nbsp; &nbsp;</span></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                            mso-hansi-font-family: 'Times New Roman'">2022 年 4 月 8 日</span></p>
+                    </td>
+                </tr>
+                <tr style="height: 25.5pt; mso-yfti-irow: 12; mso-yfti-lastrow: yes">
+                    <td colspan="10" style="border-right: windowtext 1pt solid; padding-right: 5.4pt;
+                        border-top: #d4d0c8; padding-left: 5.4pt; padding-bottom: 0cm; border-left: windowtext 1pt solid;
+                        width: 433.65pt; padding-top: 0cm; border-bottom: windowtext 1pt solid; height: 25.5pt;
+                        background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"
+                        width="578">
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                专业意见：</span><span lang="EN-US" style="font-size: 12pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt"><span style="mso-spacerun: yes">&nbsp; &nbsp;通过
+                            </span>
+                                <o:p>
+                                </o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt">
+                            <span lang="EN-US" style="font-size: 12pt">
+                                <o:p>&nbsp;</o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; vertical-align: middle;">
+                            <span lang="EN-US" style="font-size: 12pt"><span style="mso-spacerun: yes">&nbsp; &nbsp;
+                                &nbsp; </span></span><span lang="EN-US"><span style="mso-spacerun: yes">&nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman';
+                                        mso-hansi-font-family: 'Times New Roman'">负责人签字：<img src='http://sjjx.ouc.edu.cn/bysj/DaYin/dzname/2006115.jpg'  width='60' height='30' runat='server' /></span><span lang="EN-US" style="font-size: 12pt"><o:p></o:p></span></p>
+                        <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-indent: 294pt; mso-char-indent-count: 28.0">
+                            <span style="font-family: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">
+                                2022 年 5 月 2 日</span></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
