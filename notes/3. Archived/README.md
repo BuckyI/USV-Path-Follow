@@ -7,4 +7,5 @@ date modified: 2022-05-10 21:43:06
 
 # README
 
-其他过程文件归档, 可能会有 pdf, ppt 之类的
+过程文件归档
+(可能会有 pdf, ppt 之类的)

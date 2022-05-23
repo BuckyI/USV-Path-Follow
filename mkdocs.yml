@@ -1,7 +1,12 @@
-site_name: ProjectDocument
+site_name: Project Document
+site_url: https://buckyi.github.io/USV-Path-Follow/
+repo_url: https://github.com/BuckyI/USV-Path-Follow
+repo_name: USV-Path-Follow
+
 theme:
   name: material
   features:
+    - header.autohide
     - navigation.indexes
     - navigation.top
   palette: 
